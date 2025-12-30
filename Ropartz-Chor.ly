@@ -13,6 +13,8 @@ diminuendo = \markup {\italic{dim.}}
 crescendo = \markup {\italic{cresc.}}
 piuF = \markup { \italic più \dynamic f }
 menoF = \markup { \italic meno \dynamic f }
+sempreFF = \markup { \italic sempre \dynamic ff }
+menoF = \markup { \italic meno \dynamic f }
 
 \header {
   title = "Titel"
@@ -70,6 +72,49 @@ Global = {
   \tempo "Più animato"
   \mark \default
   \key fis \minor
+  s1*11
+  \bar "||"
+  \time 2/4
+  \tempo "allargando"
+  s2
+  \bar "||"
+  \time 3/4
+  s2.
+  \bar "||"
+  \time 2/4
+  s2
+   \bar "||"
+  \time 3/4
+  s2.
+  \mark \default
+  \time 4/4
+  \tempo "Più largamente"
+  \bar "||"
+  s1*10
+  \bar "||"
+  \mark \default
+  \key b \minor
+  \tempo "Largamente molto"
+  s1.*7
+  \bar "||"
+  \time 4/4
+  s1*17
+  \bar "||"
+  \tempo "Tempo primo"
+  \mark \default
+  s1*16
+  \bar "||"
+  \time 4/4
+  \mark \default
+  \tempo "Tempo primo"
+  s1*7
+  \time 2/4
+  \bar "||"
+  s2
+  \time 4/4
+  \bar "||"
+  s1*11
+  \bar "|."
 }
 
 Soprano = \relative {
@@ -188,7 +233,7 @@ Soprano = \relative {
   \bar "||"
   \key fis \minor
   \time 4/4
-  r4 r8 cis8 d8 r8 r8 d8 |
+  r4-\sempreFF r8 cis8 d8 r8 r8 d8 |
   cis8 r8 r8 cis8 d8 r8 r8 d8 |
   cis8 r8 r4 r2 |
   r4 r8 dis8 e8 r8 r8 e8 |
@@ -209,7 +254,7 @@ Soprano = \relative {
   \bar "||"
   \key b \minor
   \time 6/4
-  r8 r16 b,16 b4 ~ b8 b8 des2 ~ des8 r8 |
+  r8 r16 b,16\ff b4 ~ b8 b8 des2 ~ des8 r8 |
   r8 b8 ~ b8 b8 \once \omit TupletBracket
   \times 2/3 {
     b8 b8 b8 } e2 ~ e8 r8 |
@@ -218,17 +263,17 @@ Soprano = \relative {
   f4 des4 ~ des8 des8 as2 \once \omit TupletBracket
   \times 2/3 {
     des8 des8 des8 } |
-  es2 d8 d8 d4 h8 h8 h8 h8 |
-  cis4 ~ cis8 r8 r8 c8 c4 a8 a8 c8 c16 a16 |
+  es2\> d8\!-\diminuendo d8 d4 h8 h8 h8 h8 |
+  cis4 ~ cis8 r8 r8 c8-\menoF c4 a8 a8 c8 c16 a16 |
   \numericTimeSignature\time 4/4 g4 \once \omit TupletBracket
   \times 2/3 {
-    g8 g8 g8 } c8 c8 es8. c16 |
+    g8-\crescendo g8 g8 } c8 c8 es8. c16 |
   b8 b8 \once \omit TupletBracket
   \times 2/3 {
     b8 b8 b8 } es8 es8 b8 es8 | % 10
-  f2. ~ f8 r8 |
+  f2. ~\ff f8 r8 |
   R1 |
-  r2 r4 \tmpVoiceOne { f4 |
+  r2 r4 \tmpVoiceOne { f4\fff |
                        ges2. ges4 |
                        f2 r4 f4 |
                        ges2. ~ ges8 r8 |
@@ -385,7 +430,7 @@ Alto = \relative {
   \bar "||"
   \key fis \minor
   \time 4/4
-  r4 r8 \tmpVoiceOne {
+  r4-\sempreFF r8 \tmpVoiceOne {
     a8 b8 r8 r8 b8 |
     a8 r8 r8 a8 b8 r8 r8 ais8 |
     a8 r8 r4 r2 |
@@ -408,18 +453,18 @@ Alto = \relative {
   \bar "||"
   \key b \minor
   \time 6/4
-  r8 r16 b16 b4 ~ b8 b8 a2 ~ a8 r8 |
+  r8 r16 b16\ff b4 ~ b8 b8 a2 ~ a8 r8 |
   r8 b8 ~ b8 b8 \once \omit TupletBracket \times 2/3 { b8 b8 b8 } a2 ~ a8 r8 |
   r8 r16 b16 b4 ~ b8 b8 a2 ~ a8 r8 |
   r4 b2 a2 ~ a8 r8 |
   as4 as4 ~ as8 as8 as2 \once \omit TupletBracket \times 2/3 { as8 as8 as8 } |
-  g2 fis8 fis8 fis4 fis8 fis8 fis8 fis8 |
-  eis4 ~ eis8 r8 r8 e8 e4 e8 e8 e8 e16 e16 |
-  \numericTimeSignature\time 4/4 es4 \once \omit TupletBracket \times 2/3 { es8 es8 es8 } g8 g8 g8. g16 |
+  g2\> fis8\!-\diminuendo fis8 fis4 fis8 fis8 fis8 fis8 |
+  eis4 ~ eis8 r8 r8 e8-\menoF e4 e8 e8 e8 e16 e16 |
+  \numericTimeSignature\time 4/4 es4 \once \omit TupletBracket \times 2/3 { es8-\crescendo es8 es8 } g8 g8 g8. g16 |
   ges8 ges8 \once \omit TupletBracket \times 2/3 { ges8 ges8 ges8 } ges8 ges8 ges8 b8 |
-  c2. ~ c8 r8 |
+  c2. ~\ff c8 r8 |
   R1 |
-  r2 r4 \tmpVoiceOne { c4 |
+  r2 r4 \tmpVoiceOne { c4\fff |
                        h2. h4 |
                        c2 r4 c4 |
                        a2. ~ a8 r8 |
@@ -570,7 +615,7 @@ Tenor = \relative {
   \bar "||"
   \key fis \minor
   \time 4/4
-  r4 r8 cis8 d8 r8 r8 d8 |
+  r4-\sempreFF r8 cis8 d8 r8 r8 d8 |
   cis8 r8 r8 cis8 d8 r8 r8 d8 |
   cis8 r8 r4 r2 |
   r4 r8 dis8 e8 r8 r8 e8 |
@@ -591,18 +636,18 @@ Tenor = \relative {
   \bar "||"
   \key b \minor
   \time 6/4
-  r8 r16 b16 b4 ~ b8 b8 des2 ~ des8 r8 |
+  r8 r16 b16\ff b4 ~ b8 b8 des2 ~ des8 r8 |
   r8 b8 ~ b8 b8 \once \omit TupletBracket \times 2/3 { b8 b8 b8 } e2 ~ e8 r8 |
   r8 r16 b16 b4 ~ b8 b8 ges'2 ~ ges8 r8 |
   r4 f2 e2 ~ e8 r8 |
   f4 f4 fes4 fes2 \once \omit TupletBracket \times 2/3 { fes8 fes8 fes8 } |
-  des2 d8 d8 d4 d8 d8 d8 d8 |
-  h4 ~ h8 r8 r8 c8 c4 c8 c8 c8 c16 c16 |
-  \numericTimeSignature\time 4/4 c4 \once \omit TupletBracket \times 2/3 { es8 es8 es8 } es8 es8 es8. es16 |
+  des2\> d8\!-\diminuendo d8 d4 d8 d8 d8 d8 |
+  h4 ~ h8 r8 r8 c8-\menoF c4 c8 c8 c8 c16 c16 |
+  \numericTimeSignature\time 4/4 c4 \once \omit TupletBracket \times 2/3 { es8-\crescendo es8 es8 } es8 es8 es8. es16 |
   es8 es8 \once \omit TupletBracket \times 2/3 { es8 es8 es8 } es8 es8 es8 ges8 |
-  es2. ~ es8 r8 |
+  es2. ~\ff es8 r8 |
   R1 |
-  r2 r4 \tmpVoiceOne { f4 |
+  r2 r4 \tmpVoiceOne { f4\fff |
                        ges2. ges4 |
                        f2 r4 f4 |
                        ges2. ~ ges8 r8 |
@@ -754,7 +799,7 @@ Bass = \relative {
  \bar "||"
  \key fis \minor
  \time 4/4
- \tmpVoiceOne { r4 r8 fis8 e8 r8 r8 e8 |
+ \tmpVoiceOne { r4-\sempreFF r8 fis8 e8 r8 r8 e8 |
  fis8 r8 r8 fis8 e8 r8 r8 e8 |
  fis8 r8 r4 r2 |
  r4 r8 gis8 fis8 r8 r8 fis8 |
@@ -775,18 +820,18 @@ Bass = \relative {
  \bar "||"
  \key b \minor
  \time 6/4
- r8 r16 b16 b4 ~ b8 b8 ges2 ~ ges8 r8 |
+ r8 r16 b16\ff b4 ~ b8 b8 ges2 ~ ges8 r8 |
  r8 b8 ~ b8 b8 \once \omit TupletBracket \times 2/3 { b8 b8 b8 } ges2 ~ ges8 r8 |
  r8 r16 b16 b4 ~ b8 b8 ges2 ~ ges8 r8 |
  r4 \tmpVoiceOne { b2 ges2 ~ ges8 r8 } |
  r4 r4 des8 ( es8 ) fes4 ~ fes8 es8 des8 fes8 |
- b,2 h8 cis8 d4 d8 cis8 h8 d8 |
- gis,4 ~ gis8 r8 a4 ( ~ a8. h16 ) c2 |
- \numericTimeSignature\time 4/4 c4 ( ~ c8. d16 ) es2 |
+ b,2\> h8\!-\diminuendo cis8 d4 d8 cis8 h8 d8 |
+ gis,4 ~ gis8 r8 a4-\menoF ( ~ a8. h16 ) c2 |
+ \numericTimeSignature\time 4/4 c4-\crescendo ( ~ c8. d16 ) es2 |
  es4 ( ~ es8. f16 ) ges4 ~ ges8. es16 |
- a2. ~ a8 r8 |
+ a2. ~\ff a8 r8 |
  R1 |
- r2 r4 \tmpVoiceOne { a4 |
+ r2 r4 \tmpVoiceOne { a4\fff |
  a2. a4 |
  a2 r4 a4 |
  a2. ~ a8 r8 |
@@ -1211,7 +1256,7 @@ Layout = {
 
 %showLastLength = R1*15
 % The score definition
-%{
+
 \score {
   <<
     \new ChoirStaff <<
@@ -1238,13 +1283,4 @@ Layout = {
   }
   % To create MIDI output, uncomment the following line:
   % \midi {}
-}%}
-\score {
-  \new ChoirStaff <<
-\new Staff { << \Global \Layout \new Voice = "soprano" { \Soprano } \SopranTwo >> }
-      \new Lyrics \lyricsto "soprano" { \SopranoLyricsOne }
-
-      \new Staff { << \Global \new Voice = "alto" { \Alto } \AltTwo >> }
-      \new Lyrics \lyricsto "alto" { \AltoLyricsOne }
-  >>
-  }
+}
