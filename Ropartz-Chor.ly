@@ -51,6 +51,10 @@ Global = {
   \tempo "Tempo primo"
   s1*12
   \mark \default
+  s1*7
+  \bar "||"
+  \key f \minor
+  \mark \default
 }
 
 Soprano = \relative {
@@ -64,8 +68,8 @@ Soprano = \relative {
  c4 ~ c8 r8 c8 c8 b8 as8 |
  f'4 as,8-\cresc b8 c4 c8 c8 |
  es4. as,8 as4 ges8 f8 |
- des'2 des4 des4\< |
- fes4\! des8.\mf ces16 heses4\> as8 ges8\! |
+ des'2 des4\< des4 |
+ fes4\!\mf des8. ces16 heses4\> as8 ges8\! |
  f4 f8 r8 r2 |
  R1*7 |
  c'8\p c8 es8 des8 c4 c8 b8 |
@@ -82,7 +86,7 @@ Soprano = \relative {
  f'4. ( d8 ) a4.\> h8\! |
  c4 c8\< c8\! cis4 e8\> cis8\! |
  h4. ( ais8 ) gis4 gis4\p |
- fis8\< fis8\! fis4 ~ fis8 fis8\> g8. g16\! |
+ fis8\< fis8 fis4\! ~ fis8 fis8\> g8. g16\! |
  fis2 ~ fis4 r4 |
  R1 |
  \bar "||"
@@ -104,10 +108,10 @@ Soprano = \relative {
  des8.-\menoF es16 des4 b4 ges'4 |
  f4 b,2 d4 |
  f8 ( es4 ) b8 b4 f4 |
- as8 ( ges8 ) b8 ( des8 ) des4 ~ des8 r16 des16 |
+ as8\< ( ges8 ) b8 ( des8\! ) des4 ~ des8 r16 des16\f |
  des4 c8 b8 as'4 g8. f16 |
- f4 ( e4 ~ e8 ) e8 f8 des8 |
- c2 ~ c8 c8 es8. c16 |
+ f4 ( e4 ~ e8 ) e8 f8-\dim des8 |
+ c2 ~\> c8\!\< c8\! es8.\> c16\! |
  \key f \minor
  c4 ~ c8 r8 r2 |
  R1*23 |
@@ -177,7 +181,8 @@ Soprano = \relative {
  dis8 r8 r4 r2 |
  r4 r8 eis8 fis8 r8 r8 fis8 |
  eis4 eis8. eis16 fis8 fis4 fis8 |
- f4 r8 g,8 des'8 r8 r8 g,8 | % 10 des'8 r8 r8 g,8 des'8 r8 r8 g,8 |
+ f4 r8 g,8 des'8 r8 r8 g,8 | % 10
+ des'8 r8 r8 g,8 des'8 r8 r8 g,8 |
  g'2 ~ g4 r4 |
  \time 2/4 R2 |
  \time 3/4 r8 c,8 c8 c8 c8 c8 |
@@ -205,7 +210,8 @@ Soprano = \relative {
  g8 g8 g8 } c8 c8 es8. c16 |
  b8 b8 \once \omit TupletBracket
  \times 2/3 {
- b8 b8 b8 } es8 es8 b8 es8 | % 10 f2. ~ f8 r8 |
+ b8 b8 b8 } es8 es8 b8 es8 | % 10
+ f2. ~ f8 r8 |
  R1 |
  r2 r4 \tmpVoiceOne { f4 |
  ges2. ges4 |
@@ -216,7 +222,8 @@ Soprano = \relative {
  <f b>2 ~ ~ <f b>4 r4 } |
  R1*6 |
  \bar "||"
- R1*9 | % 10 r4 des8 des8 es4 e4 |
+ R1*9 | % 10
+ r4 des8 des8 es4 e4 |
  f1 ~ |
  f2. ~ f8 r8 |
  R1*4 |
@@ -241,243 +248,199 @@ Alto = \relative {
   \autoBeamOff
   \compressEmptyMeasures
   R1*39 |
-  R1 | % 2
-  r2 r4 des''4\p | % 3
-  des4 c8 b8 b4
-  ges8 f8 | % 4
-  es2 es4 es8 es8 | % 5
-  es4 es4 ~ es8 es8 f8
-  ges8 | % 6
-  as4 d,4 r8 d4-\cresc b'8 | % 7
-  b4 b8. ( ces16 ) b4 ~
-  b8 r8 | % 8
-  a4\mf b8\< b8 h4 c8
-  c8\! | % 9
-  es4\> ( des2\! ) ~ des8 r8 |
-  % 10
-  R1 | % 11
-  r8 f,4\p f8\< as8.\! as16\> f4\! | % 12
-  r8 f4\< f8 as8.\! as16\> f4\! | % 13
-  as8.-\cresc g16 f4 f4 c4 | % 14
-  ces4. ces8 ces8 ( des8 )
-  es8 f8 | % 15
-  ges8. ( as16 ) b4 ~ b8 r8
-  ges4 | % 16
-  fes4 heses8 fes8 des4
-  des8. des16 | % 17
-  b4 b8 r8 r2 | % 18
-  R1*7 | % 25
-  c'8 c8 es8 des8
-  c4 c8 b8 | % 26
-  b4. ( as16 ges16 ) ges4
-  ges8 ges8 | % 27
-  fes8 as4 des8 des4. ges,8
-  | % 28
-  ges4. as8 ges4. ( f8 ) | % 29
-  r4 des4 eses4 heses'8. as16 |
-  % 30
-  ges4 ges8 b8 b2 ~ | % 31
-  b8 b8 ( as8 ) ges8
-  des'4 b4 ~ | % 32
-  b8 b4 c8 c4 ~ c8 r8
-  | % 33
-  R1 | % 34
-  r4 ges8. ( as16 ) b4 b4 | % 35
-  a4 a8. a16 a4 ~ a8 r8 | % 36
-  r4 a8 a8 a4 f8 d8 | % 37
-  c8 as'4 as8 gis8 gis4
-  gis8 | % 38
-  gis4 ( h,4 ) dis4 cis8 ( h8
-  ) | % 39
-  cis8 cis8 cis4 ~ cis8
-  cis8 his8 his8 | % 40
+R1 |
+r2 r4 des''4\p |
+des4 c8 b8 b4 ges8 f8 |
+es2 es4 es8 es8 |
+es4 es4 ~ es8 es8 f8 ges8 |
+as4 d,4 r8 d4-\cresc b'8 |
+b4 b8. ( ces16 ) b4 ~ b8 r8 |
+a4\mf b8\< b8 h4 c8 c8\! |
+es4\> ( des2\! ) ~ des8 r8 |
+R1 |
+r8 f,4\p f8\< as8.\! as16\> f4\! |
+r8 f4\< f8 as8.\! as16\> f4\! |
+as8.-\cresc g16 f4 f4 c4 |
+ces4. ces8 ces8 ( des8 ) es8 f8 |
+ges8. ( as16 ) b4 ~ b8 r8\< ges4\! |
+fes4\mf heses8 fes8 des4\> des8. des16\! |
+b4 b8 r8 r2 |
+R1*7 |
+c'8\p c8 es8 des8 c4 c8 b8 |
+ b4. ( as16 ges16 ) ges4 ges8 ges8 |
+ fes8\< as4 des8\! des4. ges,8 |
+ ges4.\> as8 ges4. ( f8\! ) |
+ r4 des4-\cresc eses4 heses'8. as16 |
+ ges4 ges8 b8 b2 ~ |
+ b8 b8\mf ( as8 ) ges8 des'4 b4 ~ |
+ b8 b4 c8 c4 ~ c8 r8 |
+R1 |
+r4 ges8.\f ( as16 ) b4 b4 |
+a4 a8. a16 a4 ~ a8 r8 |
+r4 a8 a8 a4 f8\> d8\! |
+c8 as'4\< as8\! gis8 gis4\> gis8\! |
+gis4 ( h,4 ) dis4 cis8\p ( h8 ) |
+cis8\< cis8 cis4\! ~ cis8 cis8\> his8 his8\! |
+cis2 ~ cis4 r4 R1 |
+\bar "||"
+\key g \minor
+g'4\ff g8. a16 b4 ~ b8 r8 |
+g4 g8. a16 a4 ~ a8 r8 |
+r8 g4 a16 ( b16 ) b4. a16 g16 |
+d'2 cis4 cis8. cis16 |
+d4 b8 g8 ges4. ges'8 |
+ges4 ( ~ ges8. f16 ) es4 ~ es8 r8 |
+r8 g,4 a16 b16 b4 ( a8 ) r8 |
+a8 a4 g8 g4 ~ g8 r8 |
+r8 a8 a8 a8 d8 d8 d8. d16 |
+c4. ( b8 a4 ) ~ a8 r8 |
+b4 f8. b16 b4 \once \omit TupletBracket
+\times 2/3 {
+  b8 b8 b8
+} |
+as2 r2 |
+R1 |
+r2 r8 f4-\menoF f8 |
+b8. c16 b4 ges4 des'4 |
+des4 ges,2 ges8.\< ( f16\! ) |
+f4\f f8 b8 des8 des4 des8 |
+b4 b4- \dim b4 as4 |
+g4 ( ges8\> ) ges8 f4\! b4 |
+\key f \minor
+as4 ~ as8 r8 r2 |
+R1*23
+\bar "||"
+\key d \minor
+\time 2/2
+r4 d,4 a'2 |
+r4 d4 e,2 |
+r4 b'4 a4 g4 |
+f2 ~ f4 f4 |
+f8 e8 d4 ~ d8 e8 f8 d8 |
+gis2 r4 gis4 |
+a4. h8 c4 c8 d8 |
+c4 ( h4 ) a2 ~ |
+a8 r8 r4 r2 |
+R1*6 |
+r4 d,4 a'2 |
+r4 d4 e,2 |
+r4 b'4 a4 g4 |
+f2 ~ f4 f4 |
+f8 e8 d4 ~ d8 e8 f8 d8 |
+gis2 r4 gis4 |
+a4. h8 c4 c8 d8 |
+es4 ( a,4 ) g4 r4 |
+r4 g4 g4 g4 |
+g4 f8 ( e8 ) d4 b'4 |
+b4 ( a2 ) g4 |
+fis4 r4 r4 a4 |
+a4 g8 ( f8 ) g8 g8 f4 |
+e2. ( g4 ) |
+c,2 r4 f4 |
+fis2 r4 fis4 |
+g4 r4 r2 |
+R1 |
+r2 r4 c,4 |
+f2 r4 c'4 |
+d,2 r4 a'4 |
+g4 f4 e2 ~ |
+e4 e4 g8 a8 b4 ~ |
+b4 b4 a4 a4 |
+a2 ( g4 ) fis4 |
+g4 es'4 c4 c8 c8 |
+b4 b8 r8 r2 |
+r4 g4 g4 g4 |
+fis2 r4 a4 |
+g2 r4 fis4 |
+g4. g8 g4 g4 |
+b4. b8 b4 a4 |
+b4. b8 b4 b4 |
+des4. des8 des4 c4 |
+cis4. cis8 cis4 cis4 |
+e4. e8 e4 g,4 |
+gis2. gis4 |
+a2 gis4 fis4 |
+fis2 eis2 |
+r4 r8 \tmpVoiceOne {
+  h'8 h4 r8 h8 |
+  h2 r4 eis,8 eis8 |
+  eis2 eis4. h'8 |
+  h2 ~ h4
+} r4
+\bar "||"
+\key fis \minor
+\time 4/4
+r4 r8 \tmpVoiceOne {
+  a8 b8 r8 r8 b8 |
+  a8 r8 r8 a8 b8 r8 r8 ais8 |
+  a8 r8 r4 r2 |
+  r4 r8 h8 c8 r8 r8 c8 |
+  h8 r8 r8 h8 c8 r8 r8 c8 |
+  h8 r8 r4 r2 |
+  r4 r8 cis8 d8 r8 r8 d8 |
+  cis4 cis8. cis16 d8 d4 d8 |
+  des4 r8 g,8 des'8 r8 r8 g,8 |
+  des'8 r8 r8 g,8 des'8 r8 r8 g,8 |
+  c2 ~ c4 r4 |
+  \time 2/4 R2 |
+  \time 3/4 r8 g8 g8 g8 g8 g8 |
+  \time 2/4 c2 ~ |
+  \time 3/4 c4 c2 |
+  \numericTimeSignature\time 4/4 cis1 ~ |
   cis2 ~ cis4 r4
-  R1 |
-  \bar "||"
-  \key g \minor
-  g'4 g8. a16 b4 ~ b8 r8 | % 2
-  g4 g8. a16 a4 ~ a8 r8 | % 3
-  r8 g4 a16 ( b16 ) b4. a16
-  g16 | % 4
-  d'2 cis4 cis8. cis16 | % 5
-  d4 b8 g8 ges4. ges'8 | % 6
-  ges4 ( ~ ges8. f16 ) es4 ~
-  es8 r8 | % 7
-  r8 g,4 a16 b16 b4 ( a8 ) r8
-  | % 8
-  a8 a4 g8 g4 ~ g8 r8 | % 9
-  r8 a8 a8 a8 d8 d8
-  d8. d16 | % 10
-  c4. ( b8 a4 ) ~ a8 r8 | % 11
-  b4 f8. b16 b4 \once \omit
-  TupletBracket
-  \times 2/3 {
-    b8 b8 b8
-  }
-  | % 12
-  as2 r2 | % 13
-  R1 | % 14
-  r2 r8 f4 f8 | % 15
-  b8. c16 b4 ges4 des'4
-  | % 16
-  des4 ges,2 ges8. ( f16 ) | % 17
-  f4 f8 b8 des8 des4
-  des8 | % 18
-  b4 b4 b4 as4 | % 19
-  g4 ( ges8 ) ges8 f4 b4 |
-  % 20
-  \key f \minor
-  as4 ~ as8 r8 r2 | % 21
-  R1*23
-  \bar "||"
-  \key d \minor
-  \time 2/2
-  r4 d,4 a'2 | % 25
-  r4 d4 e,2 | % 26
-  r4 b'4 a4 g4 | % 27
-  f2 ~ f4 f4 | % 28
-  f8 e8 d4 ~ d8 e8 f8 d8 | % 29
-  gis2 r4 gis4 | % 30
-  a4. h8 c4 c8 d8 | % 31
-  c4 ( h4 ) a2 ~ | % 32
-  a8 r8 r4 r2 | % 33
-  R1*6 | % 39
-  r4 d,4 a'2 | % 40
-  r4 d4 e,2 | % 41
-  r4 b'4 a4 g4 | % 42
-  f2 ~ f4 f4 | % 43
-  f8 e8 d4 ~ d8 e8 f8 d8 | % 44
-  gis2 r4 gis4 | % 45
-  a4. h8 c4 c8 d8 | % 46
-  es4 ( a,4 ) g4 r4 | % 47
-  r4 g4 g4 g4 | % 48
-  g4 f8 ( e8 ) d4 b'4 | % 49
-  b4 ( a2 ) g4 | % 50
-  fis4 r4 r4 a4 | % 51
-  a4 g8 ( f8 ) g8 g8 f4 | % 52
-  e2. ( g4 ) | % 53
-  c,2 r4 f4 | % 54
-  fis2 r4 fis4 | % 55
-  g4 r4 r2 | % 56
-  R1 | % 57
-  r2 r4 c,4 | % 58
-  f2 r4 c'4 | % 59
-  d,2 r4 a'4 | % 60
-  g4 f4 e2 ~ | % 61
-  e4 e4 g8 a8 b4 ~ | % 62
-  b4 b4 a4 a4 | % 63
-  a2 ( g4 ) fis4 | % 64
-  g4 es'4 c4 c8 c8 | % 65
-  b4 b8 r8 r2 | % 66
-  r4 g4 g4 g4 | % 67
-  fis2 r4 a4 | % 68
-  g2 r4 fis4 | % 69
-  g4. g8 g4 g4 | % 70
-  b4. b8 b4 a4 | % 71
-  b4. b8 b4 b4 | % 72
-  des4. des8 des4 c4 | % 73
-  cis4. cis8 cis4 cis4 | % 74
-  e4. e8 e4 g,4 | % 75
-  gis2. gis4 | % 76
-  a2 gis4 fis4 | % 77
-  fis2 eis2 | % 78
-  r4 r8 \tmpVoiceOne {
-    h'8 h4 r8 h8 | % 79
-    h2 r4 eis,8 eis8 | % 80
-    eis2 eis4. h'8 | % 81
-    h2 ~ h4
-  } r4
-  \bar "||"
-  \key fis \minor
-  \time 4/4
-  r4 r8 \tmpVoiceOne {
-    a8 b8 r8 r8 b8 | % 2
-    a8 r8 r8 a8 b8 r8 r8 ais8 | % 3
-    a8 r8 r4 r2 | % 4
-    r4 r8 h8 c8 r8 r8 c8 | % 5
-    h8 r8 r8 h8 c8 r8 r8 c8 | % 6
-    h8 r8 r4 r2 | % 7
-    r4 r8 cis8 d8 r8 r8 d8 | % 8
-    cis4 cis8. cis16 d8 d4 d8 | % 9
-    des4 r8 g,8 des'8 r8 r8 g,8 | % 10
-    des'8 r8 r8 g,8 des'8 r8 r8 g,8 | % 11
-    c2 ~ c4 r4 | % 12
-    \time 2/4  R2 | % 13
-    \time 3/4  r8 g8 g8 g8 g8 g8 | % 14
-    \time 2/4  c2 ~ | % 15
-    \time 3/4  c4 c2 | % 16
-    \numericTimeSignature\time 4/4  cis1 ~ | % 17
-    cis2 ~ cis4 r4
-  } | % 18
-  R1*8 |
-  \bar "||"
-  \key b \minor
-  \time 6/4
-  r8 r16 b16 b4 ~ b8 b8 a2 ~ a8 r8 | % 2
-  r8 b8 ~ b8 b8 \once \omit TupletBracket
-  \times 2/3  {
-    b8 b8 b8
-  }
-  a2 ~ a8 r8 | % 3
-  r8 r16 b16 b4 ~ b8 b8 a2 ~ a8 r8 | % 4
-  r4 b2 a2 ~ a8 r8 | % 5
-  as4 as4 ~ as8 as8 as2 \once \omit TupletBracket
-  \times 2/3  {
-    as8 as8 as8
-  }
-  | % 6
-  g2 fis8 fis8 fis4 fis8 fis8 fis8 fis8 | % 7
-  eis4 ~ eis8 r8 r8 e8 e4 e8 e8 e8 e16 e16 | % 8
-  \numericTimeSignature\time 4/4  es4 \once \omit TupletBracket
-  \times 2/3  {
-    es8 es8 es8
-  }
-  g8 g8 g8. g16 | % 9
-  ges8 ges8 \once \omit TupletBracket
-  \times 2/3  {
-    ges8 ges8 ges8
-  }
-  ges8 ges8 ges8 b8 | % 10
-  c2. ~ c8 r8 | % 11
-  R1 | % 12
-  r2 r4 \tmpVoiceOne {
-    c4 | % 13
-    h2. h4 | % 14
-    c2 r4 c4 | % 15
-    a2. ~ a8 r8 | % 16
-    a1 | % 17
-    b1 ~ | % 18
-    b2 ~ b4 r4
-  } |
-  R1*6 |
-  \bar "||"
-  R1*2 | % 3
-  r2 r4 des4 | % 4
-  des4 c8 b8 b4 ges8 f8 | % 5
-  es2 es4 es8 es8 | % 6
-  es4 es4 ~ es8 es8 f8 ges8 | % 7
-  as4 d,4 r8 d4 b'8 | % 8
-  b4 b8. ( ces16 ) b4 ~ b8 r8 | % 9
-  a4 b8 b8 h4 c8 c8 | % 10
-  es4 des2 des8 des8 | % 11
-  as2 a4. ( b8 | % 12
-  b2. ~ b8 ) r8 |
-  R1*4 |
-  \bar "||"
-  \time 4/4
-  R1*7
-  \bar "||"
-  \time 2/4
-  R2
-  \bar "||"
-  \time 4/4
-  R1 |
-  r4 ges4\p \< ges4 \! \> ( f8 \! ) r8 | % 2
-  R1 | % 3
-  r4 ges4\p \< ges4 \! \> ( f8 \! ) r8 | % 4
-  R1 |
-  R1*6
-  \bar "|."
+} |
+R1*8 |
+\bar "||"
+\key b \minor
+\time 6/4
+r8 r16 b16 b4 ~ b8 b8 a2 ~ a8 r8 |
+r8 b8 ~ b8 b8 \once \omit TupletBracket \times 2/3 { b8 b8 b8 } a2 ~ a8 r8 |
+r8 r16 b16 b4 ~ b8 b8 a2 ~ a8 r8 |
+r4 b2 a2 ~ a8 r8 |
+as4 as4 ~ as8 as8 as2 \once \omit TupletBracket \times 2/3 { as8 as8 as8 } |
+g2 fis8 fis8 fis4 fis8 fis8 fis8 fis8 |
+eis4 ~ eis8 r8 r8 e8 e4 e8 e8 e8 e16 e16 |
+\numericTimeSignature\time 4/4 es4 \once \omit TupletBracket \times 2/3 { es8 es8 es8 } g8 g8 g8. g16 |
+ges8 ges8 \once \omit TupletBracket \times 2/3 { ges8 ges8 ges8 } ges8 ges8 ges8 b8 |
+c2. ~ c8 r8 |
+R1 |
+r2 r4 \tmpVoiceOne { c4 |
+  h2. h4 |
+  c2 r4 c4 |
+  a2. ~ a8 r8 |
+  a1 |
+  b1 ~ |
+  b2 ~ b4 r4
+} |
+R1*6 |
+\bar "||"
+R1*2 |
+r2 r4 des4 |
+des4 c8 b8 b4 ges8 f8 |
+es2 es4 es8 es8 |
+es4 es4 ~ es8 es8 f8 ges8 |
+as4 d,4 r8 d4 b'8 |
+b4 b8. ( ces16 ) b4 ~ b8 r8 |
+a4 b8 b8 h4 c8 c8 |
+es4 des2 des8 des8 |
+as2 a4. ( b8 |
+b2. ~ b8 ) r8 |
+R1*4 |
+\bar "||"
+\time 4/4
+R1*7
+\bar "||"
+\time 2/4
+R2
+\bar "||"
+\time 4/4
+R1 |
+r4 ges4\p \< ges4 \! \> ( f8 \! ) r8 |
+R1 |
+r4 ges4\p \< ges4 \! \> ( f8 \! ) r8 |
+R1 |
+R1*6
+\bar "|."
 
 }
 
@@ -1345,13 +1308,12 @@ Layout = {
   }
   % To create MIDI output, uncomment the following line:
   % \midi {}
-}
-%}
-
+}%}
 \score {
-  <<
-    \new Staff { << \Global \Layout \new Voice = "soprano" { \Soprano } \SopranTwo >> }
-      \new Lyrics \lyricsto "soprano" { \SopranoLyricsOne }
-  >>
-}
-
+    \new ChoirStaff <<
+      \new Staff { << \Global \Layout \new Voice = "soprano" { \Soprano } \SopranTwo >> }
+      
+      \new Staff { << \Global \new Voice = "alto" { \Alto } \AltTwo >> }
+      \new Lyrics \lyricsto "alto" { \AltoLyricsOne }
+    >>
+  }
