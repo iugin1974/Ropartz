@@ -159,12 +159,12 @@ Soprano = \relative {
   f4 f8 r8 r2 |
   R1*7 |
   c'8\p c8 es8 des8 c4 c8 b8 |
-  b4. ( as16 ges16 ) ges4 ges8 ges8 |
+  b4. ( as16[ ges16] ) ges4 ges8 ges8 |
   fes8\< as4 des8\! des4. ges,8 |
   ges4.\> as8 ges4. ( f8\! ) |
   r4 des4-\crescendo eses4 heses'8. as16 |
   ges4 ges8 b8 b2 ~ |
-  b8 b8\mf ( as8 ) ges8 des'4 b4 ~ |
+  b8 b8[\mf ( as8] ) ges8 des'4 b4 ~ |
   b8 b4 c8 c4 ~ c8 r8 |
   r2 r4 ces4\f |
   ces8 ( b4 ) b8 ges'4 b,8\> c8\! |
@@ -179,10 +179,10 @@ Soprano = \relative {
   \key g \minor
   g4\ff g8. a16 b4 ~ b8 r8 |
   g4 g8. a16 a4 ~ a8 r8 |
-  r8 g4 a16 ( b16 ) b4. a16 g16 |
+  r8 g4 a16[ ( b16] ) b4. a16 g16 |
   d'2 cis4 cis8. cis16 |
   d4 b8 g8 ges4. ges'8 |
-  ges4 ( ~ ges8. f16 ) es4 ~ es8 r8 |
+  ges4 ( ~ ges8.[ f16] ) es4 ~ es8 r8 |
   r8 g,4 a16 b16 b4 ( a8 ) r8 |
   a8 a4 g8 g4 ~ g8 r8 |
   r8 a8 a8 a8 d8 d8 d8. d16 |
@@ -195,7 +195,7 @@ Soprano = \relative {
   des8.-\menoF es16 des4 b4 ges'4 |
   f4 b,2 d4 |
   f8 ( es4 ) b8 b4 f4 |
-  as8\< ( ges8 ) b8 ( des8\! ) des4 ~ des8 r16 des16\f |
+  as8[\< ( ges8] ) b8 ( des8\! ) des4 ~ des8 r16 des16\f |
   des4 c8 b8 as'4 g8. f16 |
   f4 ( e4 ~ e8 ) e8 f8-\diminuendo des8 |
   c2 ~\> c8\!\< c8\! es8.\> c16\! |
@@ -228,7 +228,7 @@ Soprano = \relative {
   d4 a4\p h4\< c4 |
   d4. d8 e4. f8\! |
   g2 r4 g,4 |
-  g4 f8 ( e8 ) f8 f8 es'4 |
+  g4 f8[ ( e8] ) f8 f8 es'4 |
   es4 d2 c4 |
   c4 ( b2 ) a4 |
   a4-\diminuendo ( g2 ) f8 g8 |
@@ -332,9 +332,9 @@ Soprano = \relative {
   \numericTimeSignature\time 4/4
   R1 |
   R1 |
-  r4 ges4\p \< ges4 \! \> ( f8 \! ) r8 |
+  r4\p ges4 \< ges4 \! \> ( f8 \! ) r8 |
   R1 |
-  r4 ges4\p \< ges4 \! \> ( f8 \! ) r8 |
+  r4\p ges4 \< ges4 \! \> ( f8 \! ) r8 |
   R1*6
   \bar "|."
 }
@@ -349,15 +349,15 @@ Alto = \relative {
   es2 es4 es8 es8 |
   es4 es4 ~ es8 es8 f8 ges8 |
   as4 d,4 r8 d4-\crescendo b'8 |
-  b4 b8. ( ces16 ) b4 ~ b8 r8 |
+  b4 b8.[ ( ces16] ) b4 ~ b8 r8 |
   a4\mf b8\< b8 h4 c8 c8\! |
   es4\> ( des2\! ) ~ des8 r8 |
   R1 |
   r8 f,4\p f8\< as8.\! as16\> f4\! |
   r8 f4\< f8 as8.\! as16\> f4\! |
   as8.-\crescendo g16 f4 f4 c4 |
-  ces4. ces8 ces8 ( des8 ) es8 f8 |
-  ges8. ( as16 ) b4 ~ b8 r8\< ges4\! |
+  ces4. ces8 ces8[ ( des8] ) es8 f8 |
+  ges8.[ ( as16] ) b4 ~ b8 r8\< ges4\! |
   fes4\mf heses8 fes8 des4\> des8. des16\! |
   b4 b8 r8 r2 |
   R1*7 |
@@ -367,14 +367,14 @@ Alto = \relative {
   ges4.\> as8 ges4. ( f8\! ) |
   r4 des4-\crescendo eses4 heses'8. as16 |
   ges4 ges8 b8 b2 ~ |
-  b8 b8\mf ( as8 ) ges8 des'4 b4 ~ |
+  b8 b8[\mf ( as8] ) ges8 des'4 b4 ~ |
   b8 b4 c8 c4 ~ c8 r8 |
   R1 |
-  r4 ges8.\f ( as16 ) b4 b4 |
+  r4 ges8.[\f ( as16] ) b4 b4 |
   a4 a8. a16 a4 ~ a8 r8 |
   r4 a8 a8 a4 f8\> d8\! |
   c8 as'4\< as8\! gis8 gis4\> gis8\! |
-  gis4 ( h,4 ) dis4 cis8\p ( h8 ) |
+  gis4 ( h,4 ) dis4 cis8[\p ( h8] ) |
   cis8\< cis8 cis4\! ~ cis8 cis8\> his8 his8\! |
   cis2 ~ cis4 r4 R1 |
   \bar "||"
@@ -384,7 +384,7 @@ Alto = \relative {
   r8 g4 a16 ( b16 ) b4. a16 g16 |
   d'2 cis4 cis8. cis16 |
   d4 b8 g8 ges4. ges'8 |
-  ges4 ( ~ ges8. f16 ) es4 ~ es8 r8 |
+  ges4 ( ~ ges8.[ f16] ) es4 ~ es8 r8 |
   r8 g,4 a16 b16 b4 ( a8 ) r8 |
   a8 a4 g8 g4 ~ g8 r8 |
   r8 a8 a8 a8 d8 d8 d8. d16 |
@@ -397,7 +397,7 @@ Alto = \relative {
   R1 |
   r2 r8 f4-\menoF f8 |
   b8. c16 b4 ges4 des'4 |
-  des4 ges,2 ges8.\< ( f16\! ) |
+  des4 ges,2 ges8.[\< ( f16]\! ) |
   f4\f f8 b8 des8 des4 des8 |
   b4 b4- \diminuendo b4 as4 |
   g4 ( ges8\> ) ges8 f4\! b4 |
@@ -426,10 +426,10 @@ Alto = \relative {
   a4. h8 c4 c8 d8 |
   es4\> ( a,4\! ) g4 r4 |
   r4 g4\mf g4 g4 |
-  g4 f8 ( e8 ) d4 b'4 |
+  g4 f8[ ( e8] ) d4 b'4 |
   b4\> ( a2 ) g4\! |
   fis4 r4 r4 a4\p |
-  a4 g8 ( f8 ) g8 g8 f4 |
+  a4 g8[ ( f8] ) g8 g8 f4 |
   e2. ( g4 ) |
   c,2 r4 f4 |
   fis2 r4 fis4 |
@@ -516,7 +516,7 @@ Alto = \relative {
   es2 es4 es8 es8 |
   es4 es4 ~ es8 es8 f8 ges8 |
   as4 d,4 r8 d4 b'8 |
-  b4 b8. ( ces16 ) b4 ~ b8 r8 |
+  b4 b8.[ ( ces16] ) b4 ~ b8 r8 |
   a4 b8 b8 h4 c8 c8 |
   es4 des2 des8 des8 |
   as2 a4. ( b8 |
@@ -531,9 +531,9 @@ Alto = \relative {
   \bar "||"
   \numericTimeSignature\time 4/4
   R1 |
-  r4 ges4\p \< ges4 \! \> ( f8 \! ) r8 |
+  r4\p ges4 \< ges4 \! \> ( f8 \! ) r8 |
   R1 |
-  r4 ges4\p \< ges4 \! \> ( f8 \! ) r8 |
+  r4\p ges4 \< ges4 \! \> ( f8 \! ) r8 |
   R1 |
   R1*6
   \bar "|."
@@ -564,8 +564,8 @@ Tenor = \relative {
   R1*14 |
   r2 r4 ges4\f |
   ges8 ( f4 ) f8 f4\> es8. d16\! |
-  d8. ( es16 es4 ) es4\< ges4\! |
-  fis4 ( cis4 ) a8. ( h16 ) des4 |
+  d8.[ ( es16] es4 ) es4\< ges4\! |
+  fis4 ( cis4 ) a8.[ ( h16] ) des4 |
   d4 d8. e16 f2 |
   f4 f4 e4 ~ e8 r8 |
   r4 dis4\> h4 gis4\! |
@@ -575,10 +575,10 @@ Tenor = \relative {
   \key g \minor
   g4\ff g8. a16 b4 ~ b8 r8 |
   g4 g8. a16 a4 ~ a8 r8 |
-  r8 g4 a16 ( b16 ) b4. a16 g16 |
+  r8 g4 a16[ ( b16] ) b4. a16 g16 |
   d'2 cis4 cis8. cis16 |
   d4 b8 g8 ges4. ges'8 |
-  ges4 ( ~ ges8. f16 ) es4 ~ es8 r8 |
+  ges4 ( ~ ges8.[ f16] ) es4 ~ es8 r8 |
   r8 g,4 a16 b16 b4 ( a8 ) r8 |
   a8 a4 g8 g4 ~ g8 r8 |
   r8 a8 a8 a8 d8 d8 d8. d16 |
@@ -589,9 +589,9 @@ Tenor = \relative {
   b4. c8 d4 f8 as8 |
   g4 ( es4 ) d8 r8 r4 |
   r4 b4 b2 ( ~ |
-  b8\< c8 ) des8 es8\! f4 g8 as8 |
+  b8[\< c8] ) des8 es8\! f4 g8 as8 |
   g4. g8-\diminuendo g4. f8 |
-  e4 es4\> d4 es8 ( e8\! ) |
+  e4 es4\> d4 es8[ ( e8]\! ) |
   \key f \minor
   f4 ~ f8 r8 r2 |
   R1*23 |
@@ -618,7 +618,7 @@ Tenor = \relative {
   f4 f8 g8 f4\> ( e4\! ) |
   d4 r4 d2\p |
   d4 r4 r4 d4 |
-  d4 c8 ( h8 ) c4 b4 |
+  d4 c8[ ( h8] ) c4 b4 |
   a2 ~ a4 r4 |
   R1 |
   r4 g4\f d'2 |
@@ -719,9 +719,9 @@ Tenor = \relative {
   \numericTimeSignature\time 4/4
   R1 |
   R1 |
-  r4 ges4\p \< ges4 \! \> ( f8 \! ) r8 |
+  r4\p ges4 \< ges4 \! \> ( f8 \! ) r8 |
   R1 |
-  r4 ges4\p \< ges4 \! \> ( f8 \! ) r8 |
+  r4\p ges4 \< ges4 \! \> ( f8 \! ) r8 |
   R1*6
   \bar "|."
 
@@ -736,7 +736,7 @@ Bass = \relative {
   b4 ges8 f8 es4 f8 ges8 |
   as2 ges4 f8 es8 |
   d4 f4 ~ f8 ces8 b8 as8 |
-  ges8. ( b16 ) es4 ~ es8 r8 r4 |
+  ges8.[ ( b16] ) es4 ~ es8 r8 r4 |
   c'4\mf b4 a4 f4 |
   ges2 ~ ges8 ges8-\diminuendo ges8 ges8 |
   des4. ( es8 ) f8 f8 f4 ~ |
@@ -748,7 +748,7 @@ Bass = \relative {
   heses4 heses8\< des8\! ges4 ges,8\> ges8\! |
   b4 b8 r8 r2 |
   R1*17 |
-  r4 a'8.\f ( gis16 ) fis4. fis8 |
+  r4 a'8.[\f ( gis16] ) fis4. fis8 |
   f4 f8.\> e16 d4\! ( a'4 |
   as4 ) as8 f8 des4 cis4 |
   gis4.\< ( ais8\! ) h4 dis4\p |
@@ -761,7 +761,7 @@ Bass = \relative {
   r8 g4 a16 ( b16 ) b4. a16 g16 |
   d'2 cis4 cis8. cis16 |
   d4 b8 g8 ges4. ges8 |
-  ges4 ( ~ ges8. f16 ) es4 ~ es8 r8 |
+  ges4 ( ~ ges8.[ f16] ) es4 ~ es8 r8 |
   r8 g4 a16 b16 b4 ( a8 ) r8 |
   a8 a4 g8 g4 ~ g8 r8 |
   r8 a8 a8 a8 d8 d8 d8. d16 |
@@ -796,8 +796,8 @@ Bass = \relative {
   f4 g8 f8 es4 g4 |
   g,4 g'4 f4 d4 |
   b'8 b8 d,2 cis4 |
-  d2 r4 d8\mf ( e8 ) |
-  f4 b8 ( a8 ) g8 ( f8 ) e8 d8 |
+  d2 r4 d8[\mf ( e8] ) |
+  f4 b8[ ( a8] ) g8 ( f8 ) e8 d8 |
   cis1 |
   d2 r2 |
   R1*3 |
@@ -808,7 +808,7 @@ Bass = \relative {
   c2 ~ c4 r4 |
   R1*2 |
   r2 r4 c'4\p |
-  c4 b8 ( a8 ) b4 a4 |
+  c4 b8[ ( a8] ) b4 a4 |
   g2 ~ g4 r4 |
   R1 |
   r2 r4 c,4\f |
@@ -825,11 +825,11 @@ Bass = \relative {
     d2
   } r4 fis,4 |
   g2 r4 d4 |
-  es4 b'4 g4 f8 ( e8 ) |
+  es4 b'4 g4 f8[ ( e8] ) |
   dis4 r4 es4 ( f4 ) |
-  ges4 des'4 b4 as8 ( g8 ) |
+  ges4 des'4 b4 as8[ ( g8] ) |
   fis4 r8 fis8 g4 gis4 |
-  a4 e'4 cis4 h8 ( ais8 ) |
+  a4 e'4 cis4 h8[ ( ais8] ) |
   a2. a4 |
   gis2.\ff gis4 |
   a2 gis4 fis4 |
@@ -868,11 +868,11 @@ Bass = \relative {
   r8 b8 ~ b8 b8 \once \omit TupletBracket \times 2/3 { b8 b8 b8 } ges2 ~ ges8 r8 |
   r8 r16 b16 b4 ~ b8 b8 ges2 ~ ges8 r8 |
   r4 \tmpVoiceOne { b2 ges2 ~ ges8 r8 } |
-  r4 r4 des8 ( es8 ) fes4 ~ fes8 es8 des8 fes8 |
+  r4 r4 des8[ ( es8] ) fes4 ~ fes8 es8 des8 fes8 |
   b,2\> h8\!-\diminuendo cis8 d4 d8 cis8 h8 d8 |
-  gis,4 ~ gis8 r8 a4-\menoF ( ~ a8. h16 ) c2 |
-  \numericTimeSignature\time 4/4 c4-\crescendo ( ~ c8. d16 ) es2 |
-  es4 ( ~ es8. f16 ) ges4 ~ ges8. es16 |
+  gis,4 ~ gis8 r8 a4-\menoF ( ~ a8.[ h16] ) c2 |
+  \numericTimeSignature\time 4/4 c4-\crescendo ( ~ c8.[ d16] ) es2 |
+  es4 ( ~ es8.[ f16] ) ges4 ~ ges8. es16 |
   a2. ~\ff a8 r8 |
   R1 |
   r2 r4 \tmpVoiceOne {
@@ -891,7 +891,7 @@ Bass = \relative {
   b4 ges8 f8 es4 f8 ges8 |
   as2 ges4 f8 es8 |
   d4 f4 ~ f8 ces8 b8 as8 |
-  ges8. ( b16 ) es4 ~ es8 r8 r4 |
+  ges8.[ ( b16] ) es4 ~ es8 r8 r4 |
   c'4 b4 a4 f4 |
   ges2 ~ ges8 ges8 ges8 ges8 |
   des2 c4 ces4 |
@@ -906,9 +906,9 @@ Bass = \relative {
   \bar "||"
   \numericTimeSignature\time 4/4
   R1 |
-  r4 ges'4\p \< ges4 \! \> ( f8 \! ) r8 |
+  r4\p ges'4 \< ges4 \! \> ( f8 \! ) r8 |
   R1 |
-  r4 ges4\p \< ges4 \! \> ( f8 \! ) r8 |
+  r4\p ges4 \< ges4 \! \> ( f8 \! ) r8 |
   R1 |
   R1*6
   \bar "|."
@@ -984,7 +984,7 @@ TenorTwo = \relative {
   \autoBeamOff
   s1*161
   s2 s4 a4 | % 63
-  d4 c4 c4 b8 ( a8 ) | % 64
+  d4 c4 c4 b8[ ( a8] ) | % 64
   d4 es4 d4. d8 | % 65
   es4 ~ es8 s8 s2 | % 66
   s1*16
@@ -2236,10 +2236,10 @@ Layout = {
       \new Staff { << \Global \clef "bass" \new Voice = "bass" { \Bass } \BassTwo >> }
       \new Lyrics \lyricsto "bass" { \BassLyricsOne }
     >>
-    \new PianoStaff <<
-      \new Staff << \Global \RH_One \\ \RH_Two >>
-      \new Staff << \Global \clef "bass" \LH_One \\ \LH_Two >>
-    >>
+ %   \new PianoStaff <<
+ %     \new Staff << \Global \RH_One \\ \RH_Two >>
+ %     \new Staff << \Global \clef "bass" \LH_One \\ \LH_Two >>
+ %   >>
     %  \new Staff << \Global \clef "bass" \Ped >>
   >>
 
