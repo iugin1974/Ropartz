@@ -1334,7 +1334,7 @@ RH_One = \relative {
     f8 c8 f8 g8 f8 c'8 ~ c8 c,8 f8 g8 f4 ~ | % 53
     f8 es8 as8 b8 as8 es'8 ~ es8 es,8 as8 b8 as4 | % 54
     r8 des,8 ges8 as8 ges8 des'8 ~ des8 des,8 ges8 as8 ges4 | % 55
-    r8 fes8 heses8 ces8 des8 fes8 heses8 ges8 des8 ces8 b8 ges'8 | % 56
+    r8 fes8 heses8 ces8 des8 fes8 heses8 ges8 des8 ces8 heses8 ges'8 | % 56
   }
   \numericTimeSignature\time 4/4  <f, f'>8 <ges ges'>8 <des des'>8 <f
   f'>8 ~ ~ <f f'>8 <ges ges'>8 <f f'>8 <e e'>8 ~ ~ | % 57
@@ -1652,8 +1652,8 @@ RH_Two = \relative {
     c8 es8 f8 ~ f8 es8 ges8 ~ ges8 f8 es8 ~ es8 des8 c8 | % 48
     s1.*3 | % 51
     as,2. r2. | % 52
-    as2. es'2. | % 53
-    as,2. es'2. |
+    as2. s2. | % 53
+    as2. es'2. |
     s1.*2
   } | % 56
   des'2 b2 | % 57
@@ -2149,7 +2149,9 @@ LH_Two = \relative {
   c'4 ~ c8 b8 b4 ~ b8 r8 | % 64
   f,4 ~ f8. g16 as4 ~ as8. g16 | % 65
   ges4 ~ ges8 as16 b16 c2 | % 66
-  s1*6 | % 72
+  s1*2 |
+  cis2 s2 |
+  s1*3 | % 72
   \set Staff.timeSignatureFraction = 12/8
   \scaleDurations 2/3 {
     s1.*8 | \barNumberCheck #80
