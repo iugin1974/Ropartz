@@ -56,7 +56,9 @@ Global = {
   \mark \default
   s1*8
   \mark \default
-  s1*9
+  s1*8
+  \tempo "allargando"
+  s1
   \bar "||"
   \key g \minor
   \mark \default
@@ -1372,7 +1374,7 @@ RH_One = \relative {
   \barNumberCheck #80
   <fis, ais cis fis>8 <fis ais cis
   fis>8 <fis ais cis fis>4 ~ ~ ~ ~ <fis ais cis fis>8 <fis ais cis
-  fis>8 <g b d g>8 <g b d g>8 \bar "||"
+  fis>8 <g b des g>8 <g b des g>8 \bar "||"
   <g b d g>4 ~ ~ ~ ~ <g b d g>8. <a a'>16 <b es g b>2 | % 82
   <g b d g>4 ~ ~ ~ ~ <g b d g>8. <a a'>16 <a es' g a>2 | % 83
   <g b d g>4 ~ ~ ~ ~ <g b d g>8 <a a'>16 <b b'>16 <b es g b>4 ~ ~ ~ ~
@@ -1382,17 +1384,19 @@ RH_One = \relative {
   <b d g b>4 ~ ~ ~ ~ <b d g b>8. <c c'>16 <d fis b d>2 | % 86
   <es ges ces es>4 ~ ~ ~ ~ <es ges ces es>8. <f f'>16 <fis c' es fis>2
   | % 87
+  \ottava #1
   <g, cis e g>4 ~ ~ ~ ~ <g cis e g>8 <a a'>16 <b b'>16 <c fis b>4 <c
   fis a>4 | % 88
   a'4. g8 g4 ~ g8 r8 | % 89
+  \ottava #0
   <d, f a d>4 ~ ~ ~ ~ <d f a d>8. <e e'>16 <f as d f>4 ~ ~ ~ ~ <f as d
   f>8. <e e'>16 | \barNumberCheck #90
   <es g c es>4 ~ ~ ~ ~ <es g c es>8 <f f'>16 <g g'>16 <a c es a>2 | % 91
   <b des f b>4 ~ ~ ~ ~ <b des f b>8. <c c'>16 <des fes b des>4 ~ ~ ~ ~
   <des fes b des>8. <c c'>16 | % 92
   <ces es as ces>4 ~ ~ ~ ~ <ces es as ces>8 <des des'>16 <es es'>16 <f
-  as c f>4 <as, f'>4 | % 93
-  f'8 ges4 d8 d4 ces8. b16 | % 94
+  as ces f>4 <as, f'>4 | % 93
+  f'8 ges4 des8 des4 ces8. b16 | % 94
   b2. d4 | % 95
   f8 es8 g8 b8 b4 f4 | % 96
   as8 ges8 b8 des8 des4 <b des>4 | % 97
@@ -1671,13 +1675,13 @@ RH_Two = \relative {
   cis2 <d fis>2 | % 69
   <es ges>2 <ges b>2 | \barNumberCheck #70
   <ges b>2 <b des>2 | % 71
-  <b f'>4 <ges' des'>4 <c, es>4 <ges' c>4 | % 72
+  <b f'>4 <g' des'>4 <c, es>4 <ges' c>4 | % 72
   \set Staff.timeSignatureFraction = 12/8
   \scaleDurations 2/3 {
     <ces, d>4. r4. <d, as'>4. d4. | % 73
-    s1.*3 | % 76
+    s1.*4 | % 76
     r2. r4. <h' dis>4. | % 77
-    s1.*3 |
+    s1.*2 |
   }
   s1 \bar "||"
   s1*7 | % 88
@@ -1694,11 +1698,11 @@ RH_Two = \relative {
   \key f \minor s1*6 | % 106
   f4 ~ f8 g16 as16 as4 g4 | % 107
   g4 ~ g8 f8 f4 ~ f8 ~ f16 s16 | % 108
-  g,2 c4 f4 | % 109
+  g,2 c4 fis4 | % 109
   f4 as4 g4 des4 | \barNumberCheck #110
-  ces4 es4 as4 des4 | % 111
+  ces4 es4 as4 d4 | % 111
   cis4 e4 dis4 a8 dis8 | % 112
-  cis2 es2 | % 113
+  cis2 e2 | % 113
   cis8 c4 b8 b4 e4 | % 114
   d4 e4 f2 | % 115
   s1 | % 116
