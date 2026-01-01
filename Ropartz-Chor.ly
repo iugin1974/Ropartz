@@ -120,6 +120,7 @@ Global = {
   \key b \minor
   \time 6/4
   \tempo "Largamente molto"
+    \grace { s8 }
   s1.*7
   \mark \default
   \bar "||"
@@ -195,7 +196,7 @@ Soprano = \relative {
   des8.-\menoF es16 des4 b4 ges'4 |
   f4 b,2 d4 |
   f8 ( es4 ) b8 b4 f4 |
-  as8[\< ( ges8] ) b8 ( des8\! ) des4 ~ des8 r16 des16\f |
+  as8[\< ( ges8] )    b8[ ( des8]\! ) des4 ~ des8 r16 des16\f |
   des4 c8 b8 as'4 g8. f16 |
   f4 ( e4 ~ e8 ) e8 f8-\diminuendo des8 |
   c2 ~\> c8\!\< c8\! es8.\> c16\! |
@@ -283,6 +284,7 @@ Soprano = \relative {
   \bar "||"
   \key b \minor
   \time 6/4
+  \grace { s8 }
   r8 r16 b,16\ff b4 ~ b8 b8 des2 ~ des8 r8 |
   r8 b8 ~ b8 b8 \once \omit TupletBracket
   \times 2/3 {
@@ -362,7 +364,7 @@ Alto = \relative {
   b4 b8 r8 r2 |
   R1*7 |
   c'8\p c8 es8 des8 c4 c8 b8 |
-  b4. ( as16 ges16 ) ges4 ges8 ges8 |
+  b4. ( as16[ ges16] ) ges4 ges8 ges8 |
   fes8\< as4 des8\! des4. ges,8 |
   ges4.\> as8 ges4. ( f8\! ) |
   r4 des4-\crescendo eses4 heses'8. as16 |
@@ -381,7 +383,7 @@ Alto = \relative {
   \key g \minor
   g'4\ff g8. a16 b4 ~ b8 r8 |
   g4 g8. a16 a4 ~ a8 r8 |
-  r8 g4 a16 ( b16 ) b4. a16 g16 |
+  r8 g4 a16[ ( b16] ) b4. a16 g16 |
   d'2 cis4 cis8. cis16 |
   d4 b8 g8 ges4. ges'8 |
   ges4 ( ~ ges8.[ f16] ) es4 ~ es8 r8 |
@@ -488,6 +490,7 @@ Alto = \relative {
   \bar "||"
   \key b \minor
   \time 6/4
+  \grace { s8 }
   r8 r16 b16\ff b4 ~ b8 b8 a2 ~ a8 r8 |
   r8 b8 ~ b8 b8 \once \omit TupletBracket \times 2/3 { b8 b8 b8 } a2 ~ a8 r8 |
   r8 r16 b16 b4 ~ b8 b8 a2 ~ a8 r8 |
@@ -674,6 +677,7 @@ Tenor = \relative {
   \bar "||"
   \key b \minor
   \time 6/4
+    \grace { s8 }
   r8 r16 b16\ff b4 ~ b8 b8 des2 ~ des8 r8 |
   r8 b8 ~ b8 b8 \once \omit TupletBracket \times 2/3 { b8 b8 b8 } e2 ~ e8 r8 |
   r8 r16 b16 b4 ~ b8 b8 ges'2 ~ ges8 r8 |
@@ -758,7 +762,7 @@ Bass = \relative {
   \key g \minor
   g4\ff g8. a16 b4 ~ b8 r8 |
   g4 g8. a16 a4 ~ a8 r8 |
-  r8 g4 a16 ( b16 ) b4. a16 g16 |
+  r8 g4 a16[ ( b16] ) b4. a16 g16 |
   d'2 cis4 cis8. cis16 |
   d4 b8 g8 ges4. ges8 |
   ges4 ( ~ ges8.[ f16] ) es4 ~ es8 r8 |
@@ -797,7 +801,7 @@ Bass = \relative {
   g,4 g'4 f4 d4 |
   b'8 b8 d,2 cis4 |
   d2 r4 d8[\mf ( e8] ) |
-  f4 b8[ ( a8] ) g8 ( f8 ) e8 d8 |
+  f4 b8[ ( a8] ) g8[ ( f8] ) e8 d8 |
   cis1 |
   d2 r2 |
   R1*3 |
@@ -864,6 +868,7 @@ Bass = \relative {
   \bar "||"
   \key b \minor
   \time 6/4
+    \grace { s8 }
   r8 r16 b16\ff b4 ~ b8 b8 ges2 ~ ges8 r8 |
   r8 b8 ~ b8 b8 \once \omit TupletBracket \times 2/3 { b8 b8 b8 } ges2 ~ ges8 r8 |
   r8 r16 b16 b4 ~ b8 b8 ges2 ~ ges8 r8 |
@@ -1044,20 +1049,20 @@ BassTwo = \relative {
 
 SopranoLyricsOne = \lyricmode {
   Nous a -- vons pleu -- ré au sou -- ve -- nir de Si -- on, __ et dans no -- tre deuil nous a -- vons sus­ -- pen -- du aux bran -- ches des sau -- les nos luths, dé -- sor -- mais i -- nu -- ti -- les.
-  Ceux qui nous re -- tienn -- ent cap -- ti -- ves au pa -- ys dé -- tes -- té de Sen -- na -- ar, nous ont de -- man -- dé de chan -- ter les can -- ti -- ques de Si -- on.
-  Com -- ment __ nos voix at -- tris -- tées pour -- raient el -- les chan -- ter sur la terre é -- tran -- gè -- re __ les saints can -- ti -- ques du Sei -- gneur! __
+  Ceux qui nous re -- tienn -- ent cap -- ti -- ves au pa -- ys dé -- tes -- té de Sen -- na -- ar, __ nous ont de -- man -- dé de chan -- ter __ les can -- ti -- ques __ de Si -- on. __
+  Com -- ment __ nos voix at -- tris -- tées __ pour -- raient el -- les chan -- ter sur la terre é -- tran -- gè -- re les saints can -- ti -- ques du Sei -- gneur! __
   %%
   Jé -- ru -- sa -- lem! __  Jé -- ru -- sa -- lem! __  Si ja -- mais je t'ou -- bli -- e, que ma droi -- te de -- meure i -- ner -- te! __ Jé -- ru -- sa -- lem! __  Jé -- ru -- sa -- lem! __
-  Et que ma lan -- gue des -- sé -- chée reste at -- ta -- chée à mon pa -- lais, si ta dé -- li -- vrance at -- ten -- du -- e,
-  Jé -- ru -- sa -- lem!  Jé -- ru -- sa -- lem! __  n'est pas le su -- jet é -- ter -- nel __ de mes es -- poirs et de mes joies! __
+  Et que ma lan -- gue des -- sé -- chée __ reste at -- ta -- chée à mon pa -- lais, si ta dé -- li -- vrance at -- ten -- du -- e,
+  Jé -- ru -- sa -- lem!  Jé -- ru -- sa -- lem! __  n'est pas le su -- jet é -- ter -- nel __ de mes es -- poirs __ et de mes joies! __
   %%
   Sei -- gneur! Sei -- gneur!
   rap -- pel -- "le -" toi __ la cru -- au -- té __ des fils d'É -- dom aux jours de no -- tre dé -- tres -- se! __
   rap -- pel -- "le -" toi, rap -- pel -- "le -" toi,
   Sei -- gneur! Sei -- gneur!
   rap -- pel -- "le -" toi, Sei -- gneur!
-  rap -- pel -- "le -" toi, rap -- pel -- "le -" toi la cru -- au -- té des fils d'É -- dom aux jours de no -- tre dé -- tres -- se!
-  Aux jours de no -- tre dé -- tres -- se!
+  rap -- pel -- "le -" toi, rap -- pel -- "le -" toi la cru -- au -- té des fils d'É -- dom aux jours de __ no -- tre dé -- tres -- se!
+  Aux jours __ de no -- tre dé -- tres -- se!
   Sei -- gneur! Sei -- gneur!
   Sei -- gneur!
   rap -- pel -- "le -" toi, Sei -- gneur!
@@ -1065,9 +1070,9 @@ SopranoLyricsOne = \lyricmode {
   rap -- pel -- "le -" toi __ la cru -- au -- té __ des fils d'É -- dom! __
   Sei -- gneur! Sei -- gneur! __
   rap -- pel -- "le -" toi __ la cru -- au -- té __ des fils d'É -- dom!
-  aux jours de no -- tre dé -- tres -- se! __
+  aux jours de no -- tre dé -- tres -- se!
   Sei -- gneur! Sei -- gneur!
-  Sou -- "viens-" toi qu'ils cri -- aient:
+  Sou -- "viens-" toi qu'ils cri -- aient: __
   %%
   A mort! A mort! A mort! A mort!
   A mort! A mort! A mort! A mort!
@@ -1099,20 +1104,20 @@ SopranoTwoLyrics = \lyricmode {
 }
 
 AltoLyricsOne = \lyricmode {
-  As -- sis sur les ber -- ges du fle -- uve dont les flots bai -- gnent Ba -- by -- lo -- ne, nous a -- vons pleu -- ré au sou -- ve -- nir de Si -- on, __ et dans no -- tre deuil, et dans no -- tre deuil nous a -- vons sus­ -- pen -- du aux bran -- ches des sau -- les nos luths, dé -- sor -- mais i -- nu -- ti -- les.
-  Ceux qui nous re -- tienn -- ent cap -- ti -- ves au pa -- ys dé -- tes -- té de Sen -- na -- ar, nous ont de -- man -- dé de chan -- ter les can -- ti -- ques de Si -- on.
-  Com -- ment __ nos voix at -- tris -- tées pour -- raient el -- les chan -- ter sur la terre é -- tran -- gè -- re __ les saints can -- ti -- ques du Sei -- gneur! __
+  As -- sis sur les ber -- ges du fle -- uve dont les flots bai -- gnent Ba -- by -- lo -- ne, nous a -- vons pleu -- ré __ au sou -- ve -- nir de Si -- on, __ et dans no -- tre deuil, et dans no -- tre deuil nous a -- vons sus­ -- pen -- du aux bran -- ches des sau -- les __ nos luths, dé -- sor -- mais i -- nu -- ti -- les.
+  Ceux qui nous re -- tienn -- ent cap -- ti -- ves au pa -- ys dé -- tes -- té de Sen -- na -- ar, __ nous ont de -- man -- dé de chan -- ter __ les can -- ti -- ques __ de Si -- on.
+  Com -- ment nos voix at -- tris -- tées pour -- raient el -- les chan -- ter sur la terre é -- tran -- gè -- re les saints can -- ti -- ques du Sei -- gneur! __
   %%
   Jé -- ru -- sa -- lem! __  Jé -- ru -- sa -- lem! __  Si ja -- mais je t'ou -- bli -- e, que ma droi -- te de -- meure i -- ner -- te! __ Jé -- ru -- sa -- lem! __  Jé -- ru -- sa -- lem! __
-  Et que ma lan -- gue des -- sé -- chée reste at -- ta -- chée à mon pa -- lais, si ta dé -- li -- vrance at -- ten -- du -- e,
-  n'est pas le su -- jet é -- ter -- nel __ de mes es -- poirs et de mes joies! __
+  Et que ma lan -- gue des -- sé -- chée __ reste at -- ta -- chée à mon pa -- lais, si ta dé -- li -- vrance at -- ten -- du -- e,
+  n'est pas le su -- jet é -- ter -- nel de mes es -- poirs __ et de mes joies! __
   %%
   Sei -- gneur! Sei -- gneur!
   rap -- pel -- "le -" toi __ la cru -- au -- té __ des fils d'É -- dom aux jours de no -- tre dé -- tres -- se! __
   Sei -- gneur! Sei -- gneur!
   rap -- pel -- "le -" toi __ la cru -- au -- té __ des fils d'É -- dom aux jours de no -- tre dé -- tres -- se!
   rap -- pel -- "le -" toi leur cru -- au -- té, __
-  Sei -- gneur! aux jours de no -- tre dé -- tres -- se!
+  Sei -- gneur! aux jours de __ no -- tre dé -- tres -- se!
   Sei -- gneur! Sei -- gneur!
   Sei -- gneur! Sei -- gneur!
   rap -- pel -- "le -" toi __ la cru -- au -- té __ des fils d'É -- dom __
@@ -1121,7 +1126,7 @@ AltoLyricsOne = \lyricmode {
   Sei -- gneur!
   rap -- pel -- "le -" toi la cru -- au -- té des fils d'É -- dom aux jours de no -- tre dé -- tres -- se!
   Sei -- gneur! Sei -- gneur!
-  Sou -- "viens-" toi qu'ils cri -- aient:
+  Sou -- "viens-" toi qu'ils cri -- aient: __
   %%
   A mort! A mort! A mort! A mort!
   A mort! A mort! A mort! A mort!
@@ -1145,7 +1150,7 @@ AltoLyricsOne = \lyricmode {
   %%
   As -- sis sur les ber -- ges du fleu -- ve
   dont les flots bai -- gnent Ba -- by -- lo -- ne,
-  nous a -- vons pleu -- ré __ au sou -- ve -- nir de Si -- on! __
+  nous a -- vons pleu -- ré __ au sou -- ve -- nir de Si -- on!
   Nous a -- vons pleu -- ré! __
   %%
   Hé -- las! __ Hé -- las! __
@@ -1156,30 +1161,30 @@ AltoTwoLyrics = \lyricmode {
 }
 
 TenorLyricsOne = \lyricmode {
-  As -- sis sur les ber -- ges du fle -- uve dont les flots bai -- gnent Ba -- by -- lo -- ne, nous a -- vons pleu -- ré au sou -- ve -- nir de Si -- on, __ et dans no -- tre deuil, et dans no -- tre deuil nous a -- vons sus­ -- pen -- du aux bran -- ches des sau -- les nos luths, dé -- sor -- mais i -- nu -- ti -- les.
-  Com -- ment __ nos voix at -- tris -- tées pour -- raient el -- les chan -- ter sur la terre é -- tran -- gère __ les saints can -- ti -- ques du Sei -- gneur! __
+  As -- sis sur les ber -- ges du fle -- uve dont les flots bai -- gnent Ba -- by -- lo -- ne, nous a -- vons pleu -- ré __ au sou -- ve -- nir de Si -- on, __ et dans no -- tre deuil, et dans no -- tre deuil nous a -- vons sus­ -- pen -- du aux bran -- ches des sau -- les nos luths, dé -- sor -- mais i -- nu -- ti -- les.
+  Com -- ment __ nos voix at -- tris -- tées __ pour -- raient el -- les __ chan -- ter sur la terre é -- tran -- gère __ les saints can -- ti -- ques du Sei -- gneur! __
   %%
   Jé -- ru -- sa -- lem! __  Jé -- ru -- sa -- lem! __  Si ja -- mais je t'ou -- bli -- e, que ma droi -- te de -- meure i -- ner -- te! __ Jé -- ru -- sa -- lem! __  Jé -- ru -- sa -- lem! __
-  Et que ma lan -- gue des -- sé -- chée reste at -- ta -- chée à mon pa -- lais,
+  Et que ma lan -- gue des -- sé -- chée __ reste at -- ta -- chée à mon pa -- lais,
   Jé -- ru -- sa -- lem! si ta dé -- li -- vrance at -- ten -- du -- e,
-  n'est pas le su -- jet é -- ter -- nel __ de mes es -- poirs et de mes joies! __
+  n'est pas le su -- jet é -- ter -- nel de mes es -- poirs et de mes __ joies! __
   %%
   Sei -- gneur! Sei -- gneur!
   rap -- pel -- "le -" toi __ la cru -- au -- té __ des fils d'É -- dom aux jours de no -- tre dé -- tres -- se! __
   Sei -- gneur! Sei -- gneur!
   rap -- pel -- "le -" toi __ la cru -- au -- té __ des fils d'É -- dom aux jours de no -- tre dé -- tres -- se! __
   Sei -- gneur!
-  rap -- pel -- "le -" toi, Sei -- gneur!
-  Sei -- gneur! __
+  rap -- pel -- "le -" toi, Sei -- gneur! __ 
+  Sei -- gneur!
   Sei -- gneur! rap -- pel -- "le -" toi
   Sei -- gneur! Sei -- gneur! Sei -- gneur! Sei -- gneur!
   rap -- pel -- "le -" toi, Sei -- gneur! rap -- pel -- "le -" toi! __
   Sei -- gneur! Sei -- gneur!
   rap -- pel -- "le -" toi __ la cru -- au -- té __ des fils d'É -- dom __
   Sei -- gneur! Sei -- gneur!
-  rap -- pel -- "le -" toi __ la cru -- au -- té __ des fils d'É -- dom aux jours de no -- tre dé -- tres -- se! __
+  rap -- pel -- "le -" toi __ la cru -- au -- té __ des fils d'É -- dom aux jours de no -- tre dé -- tres -- se!
   Sei -- gneur! Sei -- gneur!
-  Sou -- "viens-" toi qu'ils cri -- aient:
+  Sou -- "viens-" toi qu'ils cri -- aient: __
   %%
   A mort! A mort! A mort! A mort!
   A mort! A mort! A mort! A mort!
@@ -1214,20 +1219,20 @@ TenorTwoLyrics = \lyricmode {
 }
 
 BassLyricsOne = \lyricmode {
-  As -- sis sur les ber -- ges du fle -- uve dont les flots bai -- gnent Ba -- by -- lo -- ne, nous a -- vons pleu -- ré au sou -- ve -- nir de Si -- on, __ et dans no -- tre deuil, et dans no -- tre deuil nous a -- vons sus­ -- pen -- du aux bran -- ches des sau -- les nos luths i -- nu -- ti -- les.
-  Com -- ment __ nos voix at -- tris -- tées pour -- raient el -- les chan -- ter les saints can -- ti -- ques du Sei -- gneur! __
+  As -- sis sur les ber -- ges du fle -- uve dont les flots bai -- gnent Ba -- by -- lo -- ne, __ nous a -- vons pleu -- ré __ au sou -- ve -- nir de Si -- on, __ et __ dans no -- tre deuil, et __ dans no -- tre deuil nous a -- vons sus­ -- pen -- du __ aux bran -- ches des sau -- les nos luths i -- nu -- ti -- les.
+  Com -- ment nos voix at -- tris -- tées __ pour -- raient el -- les chan -- ter les saints can -- ti -- ques du Sei -- gneur! __
   %%
   Jé -- ru -- sa -- lem! __  Jé -- ru -- sa -- lem! __  Si ja -- mais je t'ou -- bli -- e, que ma droi -- te de -- meure i -- ner -- te! __ Jé -- ru -- sa -- lem! __  Jé -- ru -- sa -- lem! __
-  Et que ma lan -- gue des -- sé -- chée reste at -- ta -- chée à mon pa -- lais,
+  Et que ma lan -- gue des -- sé -- chée __ reste at -- ta -- chée à mon pa -- lais,
   Jé -- ru -- sa -- lem, Jé -- ru -- sa -- lem! __ Si ta dé -- li -- vrance at -- ten -- due,
-  n'est pas le su -- jet é -- ter -- nel __ de mes es -- poirs et de mes joies! __
+  n'est pas le su -- jet é -- ter -- nel de mes es -- poirs et de mes joies! __
   %%
   Sei -- gneur! Sei -- gneur!
   rap -- pel -- "le -" toi __ la cru -- au -- té __ des fils d'É -- dom aux jours de no -- tre dé -- tres -- se! __
   Sei -- gneur! Sei -- gneur!
   rap -- pel -- "le -" toi, Sei -- gneur!
   rap -- pel -- "le -" toi, Sei -- gneur!
-  la cru -- au -- té __ des fils d'É -- dom aux __ jours de no -- tre dé -- tres -- se!
+  la cru -- au -- té des fils d'É -- dom aux __ jours de __ no -- tre dé -- tres -- se!
 
   rap -- pel -- "le -" toi, rap -- pel -- "le -" toi,
   Sei -- gneur! __
@@ -1239,14 +1244,14 @@ BassLyricsOne = \lyricmode {
   Sei -- gneur! Sei -- gneur!
   rap -- pel -- "le -" toi,
   Sei -- gneur!
-  rap -- pel -- "le -" toi __ la cru -- au -- té __ des fils d'É -- dom
-  aux jours de no -- tre dé -- tres -- se! __
+  rap -- pel -- "le -" toi la cru -- au -- té des fils d'É -- dom
+  aux jours de no -- tre dé -- tres -- se!
   Sei -- gneur! Sei -- gneur!
-  Sou -- "viens-" toi qu'ils cri -- aient:
+  Sou -- "viens-" toi qu'ils cri -- aient: __
   %%
   A mort! A mort! A mort! A mort!
   A mort! A mort! A mort! A mort!
-  A mort les en -- fants d'Is -- ra -- ël!
+  A mort __ les en -- fants __ d'Is -- ra -- ël!
   A mort! A mort! A mort! A mort! __
   Et que Jé -- ru -- sa -- lem __ s'é -- croule! __
   %%
@@ -1302,7 +1307,7 @@ RH_One = \relative {
   eis4 fis4 gis4 a4 ~ | \barNumberCheck #30
   <a, a'>4 <b b'>4 <c c'>4 <des des'>4 | % 31
   <d d'>4 <es es'>4 <e e'>4 <f f'>4 | % 32
-  <ges b fes' ges>4 <g des' f g>4 <es' ges>2 | % 33
+  <ges b fes' ges>4 <g des' fes g>4 <es' ges>2 | % 33
   <c c'>4 <ces ces'>8. <b b'>16 <ces ces'>4 ~ ~ <ces ces'>8 <b b'>8 | % 34
   <b b'>2. <heses heses'>4 | % 35
   <as as'>2. <g g'>4 | % 36
@@ -1313,7 +1318,7 @@ RH_One = \relative {
   <ges ges'>2. <f f'>4 | \barNumberCheck #40
   \set Staff.timeSignatureFraction = 12/8
   \scaleDurations 2/3 {
-    <des f>8 b'8 c8 ~ c8 b8 f'8 ~ f8 f,8 b8 c4 b8 | % 41
+    <des f>8 b'8 c8 ~ c8 b8 f'8 ~ f8 f,8 b8 c8 b4 | % 41
     <des, f>8 b'8 c8 ~ c8 b8 f'8 ~ f8 f,8 b8 c8 b4 | % 42
     <des, f>8 b'8 c8 ~ c8 b8 f'8 ~ f8 f,8 b8 c8 b4 | % 43
     <des, es>8 b'8 c8 ~ c8 b8 es8 ~ es8 es,8 b'8 c8 b4 | % 44
@@ -1355,7 +1360,7 @@ RH_One = \relative {
   ges8 g8 fes'8 g,8 ges8 c8 es8 ges,8 ~ | % 72
   \set Staff.timeSignatureFraction = 12/8
   \scaleDurations 2/3 {
-    ges8 ces8 as8 f8 es8 des8 f8 des8 c8 as8 ges8 f8 | % 73
+    ges8 ces8 as8 f8 es8 d8 f8 d8 ces8 as8 ges8 f8 | % 73
     ces'8 b8 es8 f8 es8 b'8 ~ b8 b,8 es8 f8 es4 | % 74
     r8 cis8 fis8 gis8 fis8 cis'8 ~ cis8 cis,8 fis8 gis8 fis4 | % 75
     r8 a,8 d8 e8 d8 a'8 ~ a8 a,8 d8 e8 d4 | % 76
@@ -1526,6 +1531,7 @@ RH_One = \relative {
   \bar "||"
   \time 6/4
   \key b \minor
+  \grace { s8 }
   <f b des f>16 es'16 des16 c16 b16 as16
   ges16 f16 es16 des16 c16 b16 a16 h16 cis16 dis16 e16 fis16 gis16 a16
   h16 cis16 dis16 e16 | % 209
@@ -1629,10 +1635,10 @@ RH_Two = \relative {
   fes2 es2 | % 27
   r2 <a, c>2 | % 28
   <a c>2 h2 | % 29
-  cis2 <d f>2 | \barNumberCheck #30
+  cis2 <d fis>2 | \barNumberCheck #30
   <es ges>2 <ges b>2 | % 31
   <ges b>2 <b des>2 | % 32
-  r2 <es ges>2 | % 33
+  r2 <des des'>4 <c c'>4 | % 33
   f1 ~ | % 34
   f4 es2. ~ | % 35
   es4 des8. c16 des2 ~ | % 36
@@ -1643,11 +1649,12 @@ RH_Two = \relative {
   \set Staff.timeSignatureFraction = 12/8
   \scaleDurations 2/3 {
     s1.*7 | % 47
-    c,8 es8 f8 ~ f8 es8 ges8 ~ ges8 f8 es8 ~ es8 des8 c8 | % 48
+    c8 es8 f8 ~ f8 es8 ges8 ~ ges8 f8 es8 ~ es8 des8 c8 | % 48
     s1.*3 | % 51
-    as2. r2. | % 52
+    as,2. r2. | % 52
     as2. es'2. | % 53
-    s1.*3
+    as,2. es'2. |
+    s1.*2
   } | % 56
   des'2 b2 | % 57
   des2 b4 ~ b8. a16 | % 58
@@ -1661,7 +1668,7 @@ RH_Two = \relative {
   fes2 es2 | % 66
   <cis e>2 <a cis>2 | % 67
   <a c>2 h2 | % 68
-  cis2 <d f>2 | % 69
+  cis2 <d fis>2 | % 69
   <es ges>2 <ges b>2 | \barNumberCheck #70
   <ges b>2 <b des>2 | % 71
   <b f'>4 <ges' des'>4 <c, es>4 <ges' c>4 | % 72
@@ -1735,7 +1742,10 @@ RH_Two = \relative {
   \time 2/4  r2 \bar "||"
   \time 3/4  r2. \bar "||"
   \numericTimeSignature\time 4/4  s1*11 \bar "||"
-  \time 6/4  \key b \minor s1.*7 \bar "||"
+  \time 6/4 
+  \key b \minor 
+    \grace { s8 }
+    s1.*7 \bar "||"
   \numericTimeSignature\time 4/4  s1*11 | % 226
   <des' f>2 <des fes>2 | % 227
   <b des>2 <ges a>2 | % 228
@@ -1766,7 +1776,7 @@ RH_Two = \relative {
 
 LH_One = \relative {
   b,4 ~ b8. c16 des2 | % 2
-  b4 ~ b8. c16 des2 | % 3
+  b4 ~ b8. c16 c2 | % 3
   b4 ~ b8 c16 des16 des4 ~ des8 c16 b16 | % 4
   b4 ~ b16 as16 b16 c16 c2 | % 5
   des4 ~ des8. es16 f2 | % 6
@@ -1819,7 +1829,7 @@ LH_One = \relative {
     b8 c8 des8 ~ des8 c8 b8 ~ b8 c8 des8 ~ des8 ces8 heses8 | % 49
     <des, as'>1. | \barNumberCheck #50
     <f, c' as'>2. <as as'>4. ~ ~ <as as'>4 <f f'>8 | % 51
-    as'2. <as, as'>4. ~ ~ <as as'>4 <es es'>8 | % 52
+    <c' es,>2. <as as'>4. ~ ~ <as as'>4 <es es'>8 | % 52
     <eses c'>2. <as as'>4. ~ ~ <as as'>4 <es es'>8 | % 53
     <des ces'>2. <ces' f>2. | % 54
     des'4. des4. ges,4. b4 b8 | % 55
@@ -1992,7 +2002,9 @@ LH_One = \relative {
   r2 r4 <ges, ges'>4 ~ ~ | % 206
   <ges ges'>4 <as as'>4 <b b'>4 <ges ges'>4 | % 207
   <c c'>2 <ges ges'>4. <b b'>8 \bar "||"
-  \time 6/4  \key b \minor \grace { <b, b'>8 ( } b''2 ) ~ \times 2/3
+  \time 6/4
+  \key b \minor
+  \grace { <b, b'>8 ( } b''2 ) ~ \times 2/3
   {
     b4 c8
   }
@@ -2082,7 +2094,7 @@ LH_One = \relative {
 
 LH_Two = \relative {
   b,,4 ~ b8. c16 des2 | % 2
-  b4 ~ b8. c16 des2 | % 3
+  b4 ~ b8. c16 c2  | % 3
   b4 ~ b8 c16 des16 des4 ~ des8 c16 b16 | % 4
   b4 ~ b16 as16 b16 c16 c2 | % 5
   des4 ~ des8. es16 f2 | % 6
@@ -2128,7 +2140,7 @@ LH_Two = \relative {
     <as f'>1. | % 46
     <ges es'>1. | % 47
     <f es'>1. | % 48
-    <des' as'>1. | % 49
+    <ges des'>1. | % 49
     s1.*5 | % 54
     <b ges'>1. | % 55
     <heses fes'>2. <ges des'>2. | % 56
@@ -2184,7 +2196,10 @@ LH_Two = \relative {
   <fis fis'>4 <fis, fis'>4 <es es'>2 ~ ~ | % 206
   <es es'>1 ~ ~ | % 207
   <es es'>4 <es es'>2 <es es'>4 \bar "||"
-  \time 6/4  \key b \minor s1.*7 \bar "||"
+  \time 6/4
+  \key b \minor 
+  \grace { s8 } 
+  s1.*7 \bar "||"
   \numericTimeSignature\time 4/4  s1*16 | % 231
   es''4. ( ges8 ) ges,4. ( f8 ) \bar "||"
   \set Staff.timeSignatureFraction = 12/8
@@ -2223,7 +2238,7 @@ Layout = {
 
 \score {
   <<
-    \new ChoirStaff <<
+   \new ChoirStaff <<
       \new Staff { << \Global \Layout \new Voice = "soprano" { \Soprano } \SopranTwo >> }
       \new Lyrics \lyricsto "soprano" { \SopranoLyricsOne }
 
@@ -2235,11 +2250,11 @@ Layout = {
 
       \new Staff { << \Global \clef "bass" \new Voice = "bass" { \Bass } \BassTwo >> }
       \new Lyrics \lyricsto "bass" { \BassLyricsOne }
+    >> 
+    \new PianoStaff <<
+      \new Staff << \Global \RH_One \\ \RH_Two >>
+      \new Staff << \Global \clef "bass" \LH_One \\ \LH_Two >>
     >>
- %   \new PianoStaff <<
- %     \new Staff << \Global \RH_One \\ \RH_Two >>
- %     \new Staff << \Global \clef "bass" \LH_One \\ \LH_Two >>
- %   >>
     %  \new Staff << \Global \clef "bass" \Ped >>
   >>
 
