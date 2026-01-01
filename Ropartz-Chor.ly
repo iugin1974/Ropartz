@@ -1455,13 +1455,13 @@ RH_One = \relative {
   r4 <fis c' es>4 <g b d>4 r4 | % 136
   <g b d>4 r4 <g b g'>4 r4 | % 137
   r4 <g b e>4 <a d a'>4 r4 | % 138
-  <f gis d'>4 <f g h>2 <e g a>4 | % 139
+  <f gis d'>4 <f g b>2 <e g a>4 | % 139
   <d f a>4 r4 r2 | \barNumberCheck #140
   r4 d'4 e4. f8 | % 141
   <g, b e g>4 r4 r4 <g b e>4 ~ | % 142
   e'4 d8 cis8 d4 c4 ~ | % 143
   c4 b2 a4 | % 144
-  <h, f' as>4 r4 r4 <h f' as>4 | % 145
+  <h, f' gis>4 r4 r4 <h f' gis>4 | % 145
   <e a>4 <f h d>4 <e a c>4 r4 | % 146
   r4 <a c fis>4 <g b g'>4 r4 | % 147
   r4 <g b g'>4 <cis, g' b>4 r4 | % 148
@@ -1718,7 +1718,7 @@ RH_Two = \relative {
   fis2 a2 ~ | % 151
   a4 g8 f8 g4 f4 | % 152
   <e g>1 | % 153
-  g4 f8 e8 f4 f4 | % 154
+  g4 f8 e8 f4 <f c'>4 | % 154
   s1 | % 155
   <d g>2. r4 | % 156
   <d f>2. <g, b>4 | % 157
