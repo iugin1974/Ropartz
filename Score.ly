@@ -42,7 +42,7 @@ RH = \include "Noten/RH.ily"
 LH = \include "Noten/LH.ily"
 \score {
   <<
-    \new ChoirStaff <<
+   %{ \new ChoirStaff <<
       \new Lyrics = "above" { c4 }
 
       \new Staff {
@@ -69,7 +69,7 @@ LH = \include "Noten/LH.ily"
       \new Lyrics \lyricsto "bass" { \BassLyricsOne }
       \new Lyrics \lyricsto "bass" { \BassIPA }
     >>
-
+   %}
     \new PianoStaff <<
       \new Staff <<
         \Global

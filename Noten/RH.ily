@@ -476,9 +476,9 @@
   \key fis \minor r2 b16 a16 g8 ~ g16 a16 b16 g16 | % 183
   cis4 r4 b16 a16 g8 ~ g16 a16 b16 g16 | % 184
   cis4 b16 a16 g8 cis4 b16 a16 g8 | % 185
-  es'4 r4 c16 h16 a8 ~ a16 h16 c16 a16 | % 186
-  es'4 r4 c16 h16 a8 ~ a16 h16 c16 a16 | % 187
-  es'4 c16 h16 a8 es'4 c16 h16 a8 | % 188
+  dis'4 r4 c16 h16 a8 ~ a16 h16 c16 a16 | % 186
+  dis4 r4 c16 h16 a8 ~ a16 h16 c16 a16 | % 187
+  dis4 c16 h16 a8 dis4 c16 h16 a8 | % 188
   <eis gis>8 r8 r4 <d' fis>8 r8 r4 | % 189
   <eis, gis>8 r8 r4 <d' fis>8 r8 r4 | \barNumberCheck #190
   <f, as>4 <e g>4 <f as>4 <e g>4 | % 191
