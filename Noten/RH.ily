@@ -233,7 +233,7 @@
   <cis eis h' cis>2 r4 <g cis eis g>4 | % 181
   <cis eis h' cis>2 r4 <cis eis h' cis>4 | % 182
   \key fis \minor
-  \tmpVoiceOne {
+  \tmpVoiceOneNormalRests {
     a'16 gis16 fis8 ~ fis16 gis16 a16 fis16 b4 r4 | % 183
     a16 gis16 fis8 ~ fis16 gis16 a16 fis16 b4 r4 | % 184
     a16 gis16 fis8 b4 a16 gis16 fis8 b4 | % 185

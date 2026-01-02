@@ -14,3 +14,9 @@ tmpVoiceOne = #(define-music-function (m) (ly:music?)
                    \revert MultiMeasureRest.staff-position
                  #}
                  )
+
+tmpVoiceOneNormalRests = #(define-music-function (m) (ly:music?)
+                 #{
+                   \voiceOne $m \oneVoice
+                 #}
+                 )

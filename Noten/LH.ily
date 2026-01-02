@@ -49,7 +49,7 @@
   } | \barNumberCheck #40
   \set Staff.timeSignatureFraction = 12/8
   \scaleDurations 2/3 {
-    \tmpVoiceOne {
+    \tmpVoiceOneNormalRests {
       r4. f'4. b,4. des4 des8 | % 41
       r4. f4. b,4. des4 des8 | % 42
       r4. ges4. b,4. des4 des8 | % 43
@@ -237,7 +237,7 @@
   | % 198
   <g g'>4 <g, g'>2 ~ ~ <g g'>8 <g' g'>8 | % 199
   <fis fis'>2 <e e'>2 | \barNumberCheck #200
-  \tmpVoiceOne {
+  \tmpVoiceOneNormalRests {
     r4 r8 g'8 ~ g8 a8 h8 g8 | % 201
     cis4 ~ cis8 r8 r2 | % 202
     <fis,, fis'>2 <e e'>2 | % 203
@@ -300,7 +300,7 @@
   \bar "||"
   \set Staff.timeSignatureFraction = 12/8
   \scaleDurations 2/3 {
-    \tmpVoiceOne {
+    \tmpVoiceOneNormalRests {
       r4 r8 f'4. b,4. des4 des8 | % 233
       r4 r8 f4. b,4. des4 des8 | % 234
       r4 r8 f4. b,4. des4 des8 | % 235
