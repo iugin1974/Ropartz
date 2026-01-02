@@ -1,8 +1,9 @@
-# Ignora tutto
-*
-
-# Ma NON ignorare queste cose
-!.gitignore
-!Ropartz-Chor.ly
-
-
+denemo
+muse
+mxl
+xml
+IMSLP87947-SIBLEY1802.13621.60c3-39087011280015score.pdf
+Ropartz-Chor.ly
+Ropartz-Chor.pdf
+ropartz_orgel.ly
+Score.pdf
