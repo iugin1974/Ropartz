@@ -339,15 +339,15 @@
     <des, f>8 b'8 c8 ~ c8 b8 f'8 ~ f8 f,8 b8 c8 b4 | % 245
     <des, f>8 b'8 c8 ~ c8 b8 f'8 ~ f4. ~ f8 r8 r8 | % 246
     <des, f>8 b'8 c8 ~ c8 b8 f'8 ~ f4. ~ f8 r8 r8 | % 247
-    f,4. b4 c8 ~ c4 b8 f'4 ~ f16 r16 \bar "||"
+    f,4. b4 c8 ~ c4 b8 f'4\fermata ~ f16 r16\fermata \bar "||"
   }
   f,4 ~ f8. g16 as4 ~ as8. g16 | % 249
   ges4 ~ ges8 as16 b16 \tmpVoiceOne {
     c2 | \barNumberCheck #250
     cis4 ~ cis8. dis16 e4 ~ e8. dis16 | % 251
     d4 ~ d8 e16 fis16 gis2 | % 252
-    a4 ~ a8 gis16 fis16 ~ fis2 | % 253
-    ges4 ~ ges8 f16 es16 ~ es2 | % 254
+    a4 ~ a8. gis16 fis2 | % 253
+    ges4 ~ ges8. f16 es2 | % 254
     es4 ~ es8. ges16
   } ges8 f4 es8 \bar "||"
   \time 2/4  des4 c8 b8 \bar "||"
@@ -357,12 +357,12 @@
   r4 <ges, ges'>2 <f f'>8 r8 | \barNumberCheck #260
   r4 <ges' ges'>2 <f f'>8 r8 | % 261
   e8 f8 b8 des8 des4 a4 | % 262
-  gis8 a8 d8 fis8 fis4 es8 d8 | % 263
+  gis8 a8 d8 fis8 fis4 e8 d8 | % 263
   \tmpVoiceOne {
     des4 ~ des8. c16 c4 ~ c8. ces16 | % 264
     ces2. ~ ces8. b16 | % 265
     b1 ~ | % 266
-    b1
+    b1\fermata
   }
   \bar "|."
 }

@@ -339,7 +339,7 @@
   r4 <ges ges'>2 <ges ges'>4 | % 265
   r4 \tmpVoiceOne {
     <b f'>2 <b f'>4 ~ ~ | % 266
-    <b f'>1
+    <b f'>1\fermata
   } \bar "|."
 }
 }
@@ -470,7 +470,7 @@
     <ges es'>1. | \barNumberCheck #240
     <f es'>1. | % 241
     <ges des'>1. | % 242
-    r2. c4. ces4. | % 243
+    s2. c4. ces4. | % 243
     <b f'>1. | % 244
     <b f'>1. | % 245
     <b f'>1. | % 246
