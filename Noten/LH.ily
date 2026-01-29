@@ -296,7 +296,7 @@
   <b b'>4 ~ ~ <b b'>8 <c c'>16 <des des'>16 <des des'>2 | % 229
   <d d'>4 ~ ~ <d d'>8 <e e'>16 <f f'>16 <f f'>2 | \barNumberCheck #230
   <fis fis'>4 ~ ~ <fis fis'>8 <gis gis'>16 <a a'>16 <a a'>2 | % 231
-  \tmpVoiceOne { ges'4 ~ ges8 r8 <c, es>2 }
+  \tmpVoiceOneNormalRests { ges'4 ~ ges8 r8 <c, es>2 }
   \bar "||"
   \set Staff.timeSignatureFraction = 12/8
   \scaleDurations 2/3 {

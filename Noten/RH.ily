@@ -279,7 +279,7 @@
   a16 h16 c16 d16 e16 fis16 gis16 a16 h16 c16 d16 e16 |
   \barNumberCheck #210
   <f, b des f>16 es'16 des16 c16 b16 as16 ges16 f16 es16 des16 c16 b16
-  a16 h16 cis16 dis16 e16 fis16 gis16 a16 b16 c16 dis16 e16 | % 211
+  a16 h16 cis16 dis16 e16 fis16 gis16 a16 h16 cis16 dis16 e16 | % 211
   <f, b des f>16 es'16 des16 c16 b16 as16 ges16 f16 es16 des16 c16 b16
   a16 h16 c16 d16 e16 fis16 gis16 a16 h16 c16 d16 e16 | % 212
   <f, as des f>16 es'16 des16 c16 b16 as16 ges16 f16 <fes as des fes>16
@@ -287,16 +287,16 @@
   as16 ges16 fes16 es16 | % 213
   <des g des'>16 <es es'>16 <f f'>16 <g g'>16 <as as'>16 <b b'>16 <c
   c'>16 <des des'>16 <d fis d'>16 cis'16 h16 a16 g16 fis16 e16 d16
-  cis16 ces16 a16 g16 fis16 e16 d16 cis16 | % 214
+  cis16 h16 a16 g16 fis16 e16 d16 cis16 | % 214
   <h eis h'>16 <cis cis'>16 <dis dis'>16 <eis eis'>16 <fis fis'>16
   <gis gis'>16 <ais ais'>16 <h h'>16 <c e c'>16 h'16 a16 g16 f16 e16 d16
   c16 <c e a c>16 h'16 a16 g16 f16 e16 d16 c16 \bar "||"
   \numericTimeSignature\time 4/4  <c es g c>16 b'16 as16 g16 f16 es16
   d16 c16 <c es g c>16 b'16 as16 g16 f16 es16 d16 c16 | % 216
-  <c g' b c>16 b'16 as16 g16 f16 es16 des16 c16 <c g' b c>16 b'16 as16
-  g16 f16 es16 des16 c16 | % 217
-  <c f g c>16 b'16 a16 g16 f16 es16 des16 c16 c'16 b16 a16 g16 f16 es16
-  d16 c16 | % 218
+  <c ges' b c>16 b'16 as16 ges16 f16 es16 des16 c16 <c ges' b c>16 b'16 as16
+  ges16 f16 es16 des16 c16 | % 217
+  <c es f c'>16 b'16 a16 ges16 f16 es16 des16 c16 c'16 b16 a16 ges16 f16 es16
+  des16 c16 | % 218
   <a dis fis a>16 gis'16 fis16 e16 dis16 cis16 h16 a16 a'16 gis16 fis16
   e16 dis16 cis16 h16 a16 | % 219
   <c es f c'>16 b'16 a16 ges16 f16 es16 des16 c16 c'16 b16 a16 ges16 f16
@@ -317,9 +317,9 @@
     <b, b'>4 <a a'>4 <as as'>4 <g g'>4 | % 227
     <ges ges'>4 <f f'>4 e'4 es4 | % 228
     d4 des4 c4 ces4 | % 229
-    <b, b'>4 <a a'>4 as'4 g4 | \barNumberCheck #230
+    <as, b'>4 <a a'>4 as'4 g4 | \barNumberCheck #230
     fis4 f4 e4 es4 | % 231
-    des4 ( c8 ) r8 b4 ( as8 )
+    des4 ( c8 ) r8 b4 ( a8 )
   } r8 \bar "||"
   \set Staff.timeSignatureFraction = 12/8
   \scaleDurations 2/3 {

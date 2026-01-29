@@ -23,7 +23,7 @@
   r2 r4 ges4\f |
   ges8 ( f4 ) f8 f4\> es8. d16\! |
   d8.[ ( es16] es4 ) es4\< ges4\! |
-  fis4 ( cis4 ) a8.[ ( h16] ) des4 |
+  fis4 ( cis4 ) a8.[ ( h16] ) cis4 |
   d4 d8. e16 f2 |
   f4 f4 e4 ~ e8 r8 |
   r4 dis4\> h4 gis4\! |
