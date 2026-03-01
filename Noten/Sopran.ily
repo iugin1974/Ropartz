@@ -80,7 +80,7 @@
   r4 g4 b,4 b4 |
   a2 r4 d4 |
   d2.\> cis4\! |
-  d4 a4\p h4\< c4 |
+  d4 a4\p b4\< c4 |
   d4. d8 e4. f8\! |
   g2 r4 g,4 |
   g4 f8[ ( e8] ) f8 f8 es'4 |

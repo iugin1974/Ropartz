@@ -126,7 +126,7 @@
   \numericTimeSignature\time 4/4
   r4-\sempreFF r8 \tmpVoiceOne {
     a8 b8 r8 r8 b8 |
-    a8 r8 r8 a8 b8 r8 r8 ais8 |
+    a8 r8 r8 a8 b8 r8 r8 b8 |
     a8 r8 r4 r2 |
     r4 r8 h8 c8 r8 r8 c8 |
     h8 r8 r8 h8 c8 r8 r8 c8 |

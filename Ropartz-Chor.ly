@@ -2,8 +2,22 @@
 \language "deutsch"
 \include "Noten/Commons.ily"
 \include "MakeTitle.ily"
-#(set-global-staff-size 17)
 \pointAndClickOff
+#(set-global-staff-size 17)
+
+\bookpart {
+  \header {
+    title = \makeTitlePage #'("Psaume CXXXVI"
+                               "G. Ropartz"
+                               "(1864 - 1955)"
+                               ""
+                               "Chor"
+                               "16 Min.")
+  }
+  \markup \null
+} %ends titlin
+
+
 
 \paper{
   top-margin = 1\cm
@@ -36,22 +50,6 @@ BassIPA = \include "Noten/TextBassIPA.ily"
 
 RH = \include "Noten/RH.ily"
 LH = \include "Noten/LH.ily"
-
-
-
-\bookpart {
-  \header {
-    title = \makeTitlePage #'("Psaume CXXXVI"
-                               "G. Ropartz"
-                               "(1864 - 1955)"
-                               ""
-                               "Partitur"
-                               "16 Min.")
-  }
-  \markup \null
-} %ends titlin
-
-
 \score {
   <<
     \new ChoirStaff <<
@@ -65,40 +63,28 @@ LH = \include "Noten/LH.ily"
       }
       \context Lyrics = "above" \lyricsto "soprano" { \SopranoLyricsOneAbove }
       \context Lyrics = "below" \lyricsto "soprano" { \SopranoLyricsOne }
-      %  \context Lyrics = "below2" \lyricsto "soprano" { \SopranIPA }
+     % \context Lyrics = "below2" \lyricsto "soprano" { \SopranIPA }
       \context Lyrics = "below" \lyricsto "sopranoTwo" { \SopranoTwoLyrics }
 
       \new Staff { << \Global \new Voice = "alto" { \Alto } \AltTwo >> }
       \new Lyrics \lyricsto "alto" { \AltoLyricsOne }
-      %  \new Lyrics \lyricsto "alto" { \AltoIPA }
+     % \new Lyrics \lyricsto "alto" { \AltoIPA }
 
 
       \new Staff { << \Global \clef "treble_8" \new Voice = "tenor" { \Tenor } \TenorTwo >> }
       \new Lyrics \lyricsto "tenor" { \TenorLyricsOne }
-      %  \new Lyrics \lyricsto "tenor" { \TenorIPA }
+     % \new Lyrics \lyricsto "tenor" { \TenorIPA }
 
       \new Staff { << \Global \clef "bass" \new Voice = "bass" { \Bass } \BassTwo >> }
       \new Lyrics \lyricsto "bass" { \BassLyricsOne }
-      %  \new Lyrics \lyricsto "bass" { \BassIPA }
+     % \new Lyrics \lyricsto "bass" { \BassIPA }
     >>
-
-    \new PianoStaff <<
-      \new Staff <<
-        \Global
-        \RH
-      >>
-      \new Staff <<
-        \Global
-        \clef "bass"
-        \LH
-      >>
-    >>
-    %  \new Staff << \Global \clef "bass" \Ped >>
   >>
   \header {
-    title = "Psamue CXXXVI"
-    composer = "J. Guy Ropartz"
-    subtitle = "à Gabriel FAURÉ"
-    piece = "pour chœur, orgue et orchestre"
-  }
+  title = "Psamue CXXXVI"
+  composer = "J. Guy Ropartz"
+  arranger = "(1864 - 1955)"
+  subtitle = "à Gabriel FAURÉ"
+  piece = "pour chœur, orgue et orchestre"
+}
 }

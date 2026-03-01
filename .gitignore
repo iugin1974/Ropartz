@@ -1,8 +1,9 @@
-denemo
-muse
-mxl
-xml
-Ropartz-Chor.ly
-ropartz_orgel.ly
-*.pdf
+# Ignora tutto...
+*
 
+# ...eccetto i file LilyPond
+!*.ly
+!*.ily
+!Noten/
+!Noten/*.ily
+!.gitignore

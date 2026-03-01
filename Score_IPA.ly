@@ -41,6 +41,9 @@ BassIPA = \include "Noten/TextBassIPA.ily"
 
 RH = \include "Noten/RH.ily"
 LH = \include "Noten/LH.ily"
+
+Chords = \include "Noten/Chords.ily"
+
 \score {
   <<
     \new ChoirStaff <<
@@ -70,6 +73,8 @@ LH = \include "Noten/LH.ily"
       \new Lyrics \lyricsto "bass" { \BassLyricsOne }
       \new Lyrics \lyricsto "bass" { \BassIPA }
     >>
+
+    \new ChordNames \Chords
 
     \new PianoStaff <<
       \new Staff <<
