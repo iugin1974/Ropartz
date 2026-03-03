@@ -14,7 +14,7 @@
   h8 s8 s4 s2 | % 7
   s4 s8 gis8 a8 s8 s8 a8 | % 8
   gis4 gis8. gis16 a8 a4 a8 | % 9
-  as4 s8 g8 d'8 s8 s8 g,8 | % 10
+  as4 s8 g8 des'8 s8 s8 g,8 | % 10
   des'8 s8 s8 g,8 des'8 s8 s8 g,8 | % 11
   c2 ~ c4 s4 | % 12
   \time 2/4  s2 | % 13
