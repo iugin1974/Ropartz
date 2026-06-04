@@ -98,8 +98,19 @@ Ped = \include "Noten/Ped.ily"
   \header {
     title = "Psamue CXXXVI"
     composer = "J. Guy Ropartz"
-    arranger = "D. Gottfried"
+    arranger = "D. Gottfried (2026)"
     subtitle = "à Gabriel FAURÉ"
     piece = "pour chœur, orgue et orchestre"
   }
+  \layout {
+    \context {
+      \ChoirStaff
+      \consists Keep_alive_together_engraver
+    }
+    \context {
+      \Staff
+      \RemoveEmptyStaves
+    }
+  }
+
 }

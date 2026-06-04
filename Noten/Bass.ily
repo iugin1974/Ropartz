@@ -64,7 +64,7 @@
   r4 e4 d2 |
   r4 gis4 a4 g4 |
   fis4 d4 g4 r4 |
-  f4 g8 f8 es4 g4 |
+  f4 g8 f8 e4 g4 |
   g,4 g'4 f4 d4 |
   b'8 b8 d,2 cis4 |
   d2 r4 d8[\mf ( e8] ) |
