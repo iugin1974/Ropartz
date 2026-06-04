@@ -34,9 +34,9 @@ AltoIPA = \include "Noten/TextAltIPA.ily"
 TenorIPA = \include "Noten/TextTenorIPA.ily"
 BassIPA = \include "Noten/TextBassIPA.ily"
 
-RH = \include "Noten/RH.ily"
-LH = \include "Noten/LH.ily"
-
+RH = \include "Noten/RH1.ily"
+LH = \include "Noten/LH1.ily"
+Ped = \include "Noten/Ped.ily"
 
 
 \bookpart {
@@ -93,11 +93,12 @@ LH = \include "Noten/LH.ily"
         \LH
       >>
     >>
-    %  \new Staff << \Global \clef "bass" \Ped >>
+    \new Staff << \Global \clef "bass" \Ped >>
   >>
   \header {
     title = "Psamue CXXXVI"
     composer = "J. Guy Ropartz"
+    arranger = "D. Gottfried"
     subtitle = "à Gabriel FAURÉ"
     piece = "pour chœur, orgue et orchestre"
   }
